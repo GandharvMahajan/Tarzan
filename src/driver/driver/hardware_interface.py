@@ -421,6 +421,13 @@ class Board:
         self.port.close()
         print("END...")
 
+def pwm_servo_test(board):
+    servo_id = 1
+    board.pwm_servo_set_position(0.5, [[servo_id, 500]])
+    board.pwm_servo_set_offset(servo_id, 0)
+    board.pwm_servo_set_position(0.5, [[servo_id, 1500]])
+    print('offset:', board.pwm_servo_read_offset(servo_id))
+    print('position:', board.pwm_servo_read_position(servo_id))
 
 if __name__ == "__main__":
     board = Board()
@@ -429,3 +436,5 @@ if __name__ == "__main__":
     # Example commands:
     board.set_led(0.1, 0.9, repeat=1, led_id=1)
     board.set_buzzer(1900, 0.05, 0.01, repeat=1)
+
+    pwm_servo_test(board)
