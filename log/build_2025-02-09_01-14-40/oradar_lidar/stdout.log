@@ -1,0 +1,74 @@
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Could NOT find SWIG (missing: SWIG_EXECUTABLE SWIG_DIR) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /ros2_ws/build/oradar_lidar
+[35m[1mConsolidate compiler generated dependencies of target oradar_sdk[0m
+[ 60%] Built target oradar_sdk
+[35m[1mConsolidate compiler generated dependencies of target blocking_c_api_test[0m
+[35m[1mConsolidate compiler generated dependencies of target non-blocking_test[0m
+[35m[1mConsolidate compiler generated dependencies of target blocking_test[0m
+[35m[1mConsolidate compiler generated dependencies of target oradar_scan[0m
+[ 70%] Built target blocking_c_api_test
+[ 90%] Built target non-blocking_test
+[ 90%] Built target blocking_test
+[ 95%] [32m[1mLinking CXX executable oradar_scan[0m
+[100%] Built target oradar_scan
+-- Install configuration: "RELEASE"
+-- Execute custom install script
+-- Symlinking: /ros2_ws/install/oradar_lidar/bin/blocking_test
+-- Symlinking: /ros2_ws/install/oradar_lidar/bin/non-blocking_test
+-- Symlinking: /ros2_ws/install/oradar_lidar/bin/blocking_c_api_test
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/base/datatype.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/base/locker.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/base/thread.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/base/timer.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/base/typedef.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/base/utils.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/base/v8stdint.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/common/ChannelDevice.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/math/angles.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/network/ActiveSocket.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/network/PassiveSocket.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/network/SimpleSocket.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/network/StatTimer.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/serial/common.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/serial/serial.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/lock.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/unix.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/unix_serial.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/src/ord_lidar_c_api_driver.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/src/ord_lidar_driver.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/src/ordlidar_protocol.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/include/src/filters/FullScanFilter.h
+-- Symlinking: /ros2_ws/install/oradar_lidar/lib/liboradar_sdk.a
+-- Symlinking: /ros2_ws/install/oradar_lidar/lib/oradar_lidar/oradar_scan
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch.py
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch.py
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar//rviz2/oradar_scan.rviz
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/package_run_dependencies/oradar_lidar
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/parent_prefix_path/oradar_lidar
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.sh
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.dsv
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/path.sh
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/path.dsv
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.bash
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.sh
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.zsh
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.dsv
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/package.dsv
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/packages/oradar_lidar
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig.cmake
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig-version.cmake
+-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/package.xml

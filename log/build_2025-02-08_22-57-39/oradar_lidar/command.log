@@ -1,0 +1,6 @@
+Invoking command in '/ros2_ws/build/oradar_lidar': /usr/bin/cmake /ros2_ws/src/p2117_ros/oradar_ros -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ros2_ws/install/oradar_lidar
+Invoked command in '/ros2_ws/build/oradar_lidar' returned '0': /usr/bin/cmake /ros2_ws/src/p2117_ros/oradar_ros -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ros2_ws/install/oradar_lidar
+Invoking command in '/ros2_ws/build/oradar_lidar': /usr/bin/cmake --build /ros2_ws/build/oradar_lidar -- -j4 -l4
+Invoked command in '/ros2_ws/build/oradar_lidar' returned '0': /usr/bin/cmake --build /ros2_ws/build/oradar_lidar -- -j4 -l4
+Invoking command in '/ros2_ws/build/oradar_lidar': /usr/bin/cmake --install /ros2_ws/build/oradar_lidar
+Invoked command in '/ros2_ws/build/oradar_lidar' returned '0': /usr/bin/cmake --install /ros2_ws/build/oradar_lidar

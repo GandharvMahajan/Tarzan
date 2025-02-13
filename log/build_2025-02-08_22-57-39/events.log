@@ -1,0 +1,317 @@
+[0.000000] (-) TimerEvent: {}
+[0.000337] (oradar_lidar) JobQueued: {'identifier': 'oradar_lidar', 'dependencies': OrderedDict()}
+[0.000940] (oradar_lidar) JobStarted: {'identifier': 'oradar_lidar'}
+[0.010780] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'cmake'}
+[0.011337] (oradar_lidar) Command: {'cmd': ['/usr/bin/cmake', '/ros2_ws/src/p2117_ros/oradar_ros', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/ros2_ws/install/oradar_lidar'], 'cwd': '/ros2_ws/build/oradar_lidar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tarzan-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ros2_ws/build/oradar_lidar'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.099712] (-) TimerEvent: {}
+[0.135509] (oradar_lidar) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199829] (-) TimerEvent: {}
+[0.243400] (oradar_lidar) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.263170] (oradar_lidar) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299951] (-) TimerEvent: {}
+[0.388554] (oradar_lidar) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.399464] (oradar_lidar) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.399998] (-) TimerEvent: {}
+[0.405806] (oradar_lidar) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.406864] (oradar_lidar) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.411896] (oradar_lidar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500141] (-) TimerEvent: {}
+[0.552635] (oradar_lidar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.564616] (oradar_lidar) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.565048] (oradar_lidar) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.565823] (oradar_lidar) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.583059] (oradar_lidar) StderrLine: {'line': b'\x1b[0m=============================================================\x1b[0m\n'}
+[0.583265] (oradar_lidar) StderrLine: {'line': b'\x1b[0m-- ROS Not Found, Ros Support is turned Off!\x1b[0m\n'}
+[0.583335] (oradar_lidar) StderrLine: {'line': b'\x1b[0m=============================================================\x1b[0m\n'}
+[0.600228] (-) TimerEvent: {}
+[0.700606] (-) TimerEvent: {}
+[0.801047] (-) TimerEvent: {}
+[0.819630] (oradar_lidar) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.901145] (-) TimerEvent: {}
+[1.001512] (-) TimerEvent: {}
+[1.013105] (oradar_lidar) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.020089] (oradar_lidar) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.031873] (oradar_lidar) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.053993] (oradar_lidar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.077114] (oradar_lidar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.101597] (-) TimerEvent: {}
+[1.133848] (oradar_lidar) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.136763] (oradar_lidar) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.201711] (-) TimerEvent: {}
+[1.297046] (oradar_lidar) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.301807] (-) TimerEvent: {}
+[1.339084] (oradar_lidar) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.401933] (-) TimerEvent: {}
+[1.402226] (oradar_lidar) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.418520] (oradar_lidar) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.502106] (-) TimerEvent: {}
+[1.544949] (oradar_lidar) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.545601] (oradar_lidar) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.602223] (-) TimerEvent: {}
+[1.669247] (oradar_lidar) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.670738] (oradar_lidar) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.702308] (-) TimerEvent: {}
+[1.742543] (oradar_lidar) StderrLine: {'line': b'\x1b[0m=============================================================\x1b[0m\n'}
+[1.742825] (oradar_lidar) StderrLine: {'line': b'\x1b[0m-- ROS2 Found. ROS2 Support is turned On!\x1b[0m\n'}
+[1.742912] (oradar_lidar) StderrLine: {'line': b'\x1b[0m=============================================================\x1b[0m\n'}
+[1.744627] (oradar_lidar) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.791454] (oradar_lidar) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at sdk/CMakeLists.txt:36 (cmake_policy):\n'}
+[1.791679] (oradar_lidar) StderrLine: {'line': b'  The OLD behavior for policy CMP0053 will be removed from a future version\n'}
+[1.791751] (oradar_lidar) StderrLine: {'line': b'  of CMake.\n'}
+[1.791836] (oradar_lidar) StderrLine: {'line': b'\n'}
+[1.791904] (oradar_lidar) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[1.791962] (oradar_lidar) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[1.792019] (oradar_lidar) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[1.792074] (oradar_lidar) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[1.792150] (oradar_lidar) StderrLine: {'line': b'\n'}
+[1.792206] (oradar_lidar) StderrLine: {'line': b'\x1b[0m\n'}
+[1.792263] (oradar_lidar) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at sdk/CMakeLists.txt:39 (cmake_policy):\n'}
+[1.792318] (oradar_lidar) StderrLine: {'line': b'  The OLD behavior for policy CMP0037 will be removed from a future version\n'}
+[1.792373] (oradar_lidar) StderrLine: {'line': b'  of CMake.\n'}
+[1.792427] (oradar_lidar) StderrLine: {'line': b'\n'}
+[1.792480] (oradar_lidar) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[1.792534] (oradar_lidar) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[1.792588] (oradar_lidar) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[1.792642] (oradar_lidar) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[1.792696] (oradar_lidar) StderrLine: {'line': b'\n'}
+[1.792750] (oradar_lidar) StderrLine: {'line': b'\x1b[0m\n'}
+[1.792818] (oradar_lidar) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at sdk/CMakeLists.txt:42 (cmake_policy):\n'}
+[1.792877] (oradar_lidar) StderrLine: {'line': b'  The OLD behavior for policy CMP0043 will be removed from a future version\n'}
+[1.792932] (oradar_lidar) StderrLine: {'line': b'  of CMake.\n'}
+[1.792986] (oradar_lidar) StderrLine: {'line': b'\n'}
+[1.793040] (oradar_lidar) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[1.793096] (oradar_lidar) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[1.793154] (oradar_lidar) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[1.793215] (oradar_lidar) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[1.793284] (oradar_lidar) StderrLine: {'line': b'\n'}
+[1.793342] (oradar_lidar) StderrLine: {'line': b'\x1b[0m\n'}
+[1.793462] (oradar_lidar) StdoutLine: {'line': b'-- Could NOT find SWIG (missing: SWIG_EXECUTABLE SWIG_DIR) \n'}
+[1.802388] (-) TimerEvent: {}
+[1.826016] (oradar_lidar) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3.10 (found version "3.10.12") \n'}
+[1.831754] (oradar_lidar) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found version "3.10.12") \n'}
+[1.849608] (oradar_lidar) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at sdk/cmake/install_package.cmake:101 (cmake_policy):\n'}
+[1.849819] (oradar_lidar) StderrLine: {'line': b'  The OLD behavior for policy CMP0026 will be removed from a future version\n'}
+[1.849901] (oradar_lidar) StderrLine: {'line': b'  of CMake.\n'}
+[1.849963] (oradar_lidar) StderrLine: {'line': b'\n'}
+[1.850021] (oradar_lidar) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[1.850079] (oradar_lidar) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[1.850135] (oradar_lidar) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[1.850191] (oradar_lidar) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[1.850247] (oradar_lidar) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.850303] (oradar_lidar) StderrLine: {'line': b'  sdk/CMakeLists.txt:105 (install_package)\n'}
+[1.850391] (oradar_lidar) StderrLine: {'line': b'\n'}
+[1.850448] (oradar_lidar) StderrLine: {'line': b'\x1b[0m\n'}
+[1.902479] (-) TimerEvent: {}
+[1.951121] (oradar_lidar) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.983833] (oradar_lidar) StdoutLine: {'line': b'-- Generating done\n'}
+[1.986846] (oradar_lidar) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[1.986974] (oradar_lidar) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[1.987037] (oradar_lidar) StderrLine: {'line': b'\n'}
+[1.987113] (oradar_lidar) StderrLine: {'line': b'    CATKIN_INSTALL_INTO_PREFIX_ROOT\n'}
+[1.987169] (oradar_lidar) StderrLine: {'line': b'\n'}
+[1.987234] (oradar_lidar) StderrLine: {'line': b'\x1b[0m\n'}
+[1.994628] (oradar_lidar) StdoutLine: {'line': b'-- Build files have been written to: /ros2_ws/build/oradar_lidar\n'}
+[2.002591] (-) TimerEvent: {}
+[2.021608] (oradar_lidar) CommandEnded: {'returncode': 0}
+[2.022300] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'build'}
+[2.023168] (oradar_lidar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2_ws/build/oradar_lidar', '--', '-j4', '-l4'], 'cwd': '/ros2_ws/build/oradar_lidar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tarzan-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ros2_ws/build/oradar_lidar'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[2.103154] (-) TimerEvent: {}
+[2.113565] (oradar_lidar) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object sdk/CMakeFiles/oradar_sdk.dir/core/network/ActiveSocket.cpp.o\x1b[0m\n'}
+[2.113859] (oradar_lidar) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object sdk/CMakeFiles/oradar_sdk.dir/core/base/timer.cpp.o\x1b[0m\n'}
+[2.113975] (oradar_lidar) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object sdk/CMakeFiles/oradar_sdk.dir/core/network/SimpleSocket.cpp.o\x1b[0m\n'}
+[2.114059] (oradar_lidar) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object sdk/CMakeFiles/oradar_sdk.dir/core/network/PassiveSocket.cpp.o\x1b[0m\n'}
+[2.203286] (-) TimerEvent: {}
+[2.307072] (-) TimerEvent: {}
+[2.407621] (-) TimerEvent: {}
+[2.487907] (oradar_lidar) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object sdk/CMakeFiles/oradar_sdk.dir/core/serial/serial.cpp.o\x1b[0m\n'}
+[2.507768] (-) TimerEvent: {}
+[2.608849] (-) TimerEvent: {}
+[2.709500] (-) TimerEvent: {}
+[2.759539] (oradar_lidar) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding C object sdk/CMakeFiles/oradar_sdk.dir/core/serial/impl/unix/lock.c.o\x1b[0m\n'}
+[2.766360] (oradar_lidar) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object sdk/CMakeFiles/oradar_sdk.dir/core/serial/impl/unix/list_ports_linux.cpp.o\x1b[0m\n'}
+[2.809647] (-) TimerEvent: {}
+[2.910379] (-) TimerEvent: {}
+[3.013898] (-) TimerEvent: {}
+[3.048859] (oradar_lidar) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sdk/CMakeFiles/oradar_sdk.dir/core/serial/impl/unix/unix_serial.cpp.o\x1b[0m\n'}
+[3.114041] (-) TimerEvent: {}
+[3.214766] (-) TimerEvent: {}
+[3.264437] (oradar_lidar) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object sdk/CMakeFiles/oradar_sdk.dir/src/ord_lidar_c_api_driver.cpp.o\x1b[0m\n'}
+[3.314897] (-) TimerEvent: {}
+[3.418609] (-) TimerEvent: {}
+[3.519210] (-) TimerEvent: {}
+[3.619717] (-) TimerEvent: {}
+[3.720279] (-) TimerEvent: {}
+[3.780757] (oradar_lidar) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object sdk/CMakeFiles/oradar_sdk.dir/src/ord_lidar_driver.cpp.o\x1b[0m\n'}
+[3.822893] (-) TimerEvent: {}
+[3.924047] (-) TimerEvent: {}
+[4.024987] (-) TimerEvent: {}
+[4.098995] (oradar_lidar) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object sdk/CMakeFiles/oradar_sdk.dir/src/filters/FullScanFilter.cpp.o\x1b[0m\n'}
+[4.125111] (-) TimerEvent: {}
+[4.225697] (-) TimerEvent: {}
+[4.327897] (-) TimerEvent: {}
+[4.428418] (-) TimerEvent: {}
+[4.528976] (-) TimerEvent: {}
+[4.585971] (oradar_lidar) StderrLine: {'line': b'\x1b[01m\x1b[K/ros2_ws/src/p2117_ros/oradar_ros/sdk/src/ord_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool ordlidar::OrdlidarDriver::uart_data_find_init_info(unsigned char*, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.586369] (oradar_lidar) StderrLine: {'line': b'\x1b[01m\x1b[K/ros2_ws/src/p2117_ros/oradar_ros/sdk/src/ord_lidar_driver.cpp:203:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[4.586535] (oradar_lidar) StderrLine: {'line': b'  203 |         \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[4.586694] (oradar_lidar) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.629128] (-) TimerEvent: {}
+[4.729708] (-) TimerEvent: {}
+[4.830172] (-) TimerEvent: {}
+[4.930527] (-) TimerEvent: {}
+[5.030888] (-) TimerEvent: {}
+[5.089536] (oradar_lidar) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX static library ../liboradar_sdk.a\x1b[0m\n'}
+[5.131006] (-) TimerEvent: {}
+[5.174422] (oradar_lidar) StdoutLine: {'line': b'[ 60%] Built target oradar_sdk\n'}
+[5.217479] (oradar_lidar) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object sdk/samples/CMakeFiles/non-blocking_test.dir/non-blocking_test.cpp.o\x1b[0m\n'}
+[5.217921] (oradar_lidar) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/oradar_scan.dir/src/oradar_scan_node.cpp.o\x1b[0m\n'}
+[5.218033] (oradar_lidar) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object sdk/samples/CMakeFiles/blocking_test.dir/blocking_test.cpp.o\x1b[0m\n'}
+[5.218108] (oradar_lidar) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object sdk/samples/CMakeFiles/blocking_c_api_test.dir/blocking_c_api_test.c.o\x1b[0m\n'}
+[5.231984] (-) TimerEvent: {}
+[5.327362] (oradar_lidar) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable ../../blocking_c_api_test\x1b[0m\n'}
+[5.334913] (-) TimerEvent: {}
+[5.435403] (-) TimerEvent: {}
+[5.511380] (oradar_lidar) StdoutLine: {'line': b'[ 85%] Built target blocking_c_api_test\n'}
+[5.535533] (-) TimerEvent: {}
+[5.636179] (-) TimerEvent: {}
+[5.736752] (-) TimerEvent: {}
+[5.825865] (oradar_lidar) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable ../../non-blocking_test\x1b[0m\n'}
+[5.835003] (oradar_lidar) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable ../../blocking_test\x1b[0m\n'}
+[5.839256] (-) TimerEvent: {}
+[5.939832] (-) TimerEvent: {}
+[6.008569] (oradar_lidar) StdoutLine: {'line': b'[ 95%] Built target non-blocking_test\n'}
+[6.014058] (oradar_lidar) StdoutLine: {'line': b'[ 95%] Built target blocking_test\n'}
+[6.039901] (-) TimerEvent: {}
+[6.140293] (-) TimerEvent: {}
+[6.240678] (-) TimerEvent: {}
+[6.341068] (-) TimerEvent: {}
+[6.441458] (-) TimerEvent: {}
+[6.541844] (-) TimerEvent: {}
+[6.642208] (-) TimerEvent: {}
+[6.742564] (-) TimerEvent: {}
+[6.842944] (-) TimerEvent: {}
+[6.943315] (-) TimerEvent: {}
+[7.043671] (-) TimerEvent: {}
+[7.144052] (-) TimerEvent: {}
+[7.244451] (-) TimerEvent: {}
+[7.344847] (-) TimerEvent: {}
+[7.445218] (-) TimerEvent: {}
+[7.545580] (-) TimerEvent: {}
+[7.645984] (-) TimerEvent: {}
+[7.746355] (-) TimerEvent: {}
+[7.846712] (-) TimerEvent: {}
+[7.947112] (-) TimerEvent: {}
+[8.047457] (-) TimerEvent: {}
+[8.147823] (-) TimerEvent: {}
+[8.248164] (-) TimerEvent: {}
+[8.348516] (-) TimerEvent: {}
+[8.448885] (-) TimerEvent: {}
+[8.549262] (-) TimerEvent: {}
+[8.649650] (-) TimerEvent: {}
+[8.750040] (-) TimerEvent: {}
+[8.850411] (-) TimerEvent: {}
+[8.950807] (-) TimerEvent: {}
+[9.051172] (-) TimerEvent: {}
+[9.151523] (-) TimerEvent: {}
+[9.251875] (-) TimerEvent: {}
+[9.352237] (-) TimerEvent: {}
+[9.452589] (-) TimerEvent: {}
+[9.552969] (-) TimerEvent: {}
+[9.653331] (-) TimerEvent: {}
+[9.753694] (-) TimerEvent: {}
+[9.854157] (-) TimerEvent: {}
+[9.954519] (-) TimerEvent: {}
+[10.054882] (-) TimerEvent: {}
+[10.155243] (-) TimerEvent: {}
+[10.255612] (-) TimerEvent: {}
+[10.355993] (-) TimerEvent: {}
+[10.456363] (-) TimerEvent: {}
+[10.556720] (-) TimerEvent: {}
+[10.657097] (-) TimerEvent: {}
+[10.757473] (-) TimerEvent: {}
+[10.857847] (-) TimerEvent: {}
+[10.958202] (-) TimerEvent: {}
+[11.058573] (-) TimerEvent: {}
+[11.158959] (-) TimerEvent: {}
+[11.259316] (-) TimerEvent: {}
+[11.359674] (-) TimerEvent: {}
+[11.460028] (-) TimerEvent: {}
+[11.560370] (-) TimerEvent: {}
+[11.660783] (-) TimerEvent: {}
+[11.761183] (-) TimerEvent: {}
+[11.861537] (-) TimerEvent: {}
+[11.961887] (-) TimerEvent: {}
+[12.062252] (-) TimerEvent: {}
+[12.162646] (-) TimerEvent: {}
+[12.263012] (-) TimerEvent: {}
+[12.363372] (-) TimerEvent: {}
+[12.463736] (-) TimerEvent: {}
+[12.564116] (-) TimerEvent: {}
+[12.664490] (-) TimerEvent: {}
+[12.764862] (-) TimerEvent: {}
+[12.865275] (-) TimerEvent: {}
+[12.965683] (-) TimerEvent: {}
+[13.066133] (-) TimerEvent: {}
+[13.166651] (-) TimerEvent: {}
+[13.188160] (oradar_lidar) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable oradar_scan\x1b[0m\n'}
+[13.266842] (-) TimerEvent: {}
+[13.367519] (-) TimerEvent: {}
+[13.416800] (oradar_lidar) StdoutLine: {'line': b'[100%] Built target oradar_scan\n'}
+[13.438149] (oradar_lidar) CommandEnded: {'returncode': 0}
+[13.439183] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'install'}
+[13.455755] (oradar_lidar) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros2_ws/build/oradar_lidar'], 'cwd': '/ros2_ws/build/oradar_lidar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tarzan-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ros2_ws/build/oradar_lidar'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[13.467730] (-) TimerEvent: {}
+[13.469362] (oradar_lidar) StdoutLine: {'line': b'-- Install configuration: "RELEASE"\n'}
+[13.469638] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/lib/oradar_lidar/oradar_scan\n'}
+[13.470660] (oradar_lidar) StdoutLine: {'line': b'-- Set runtime path of "/ros2_ws/install/oradar_lidar/lib/oradar_lidar/oradar_scan" to ""\n'}
+[13.470792] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch\n'}
+[13.470924] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch.py\n'}
+[13.471078] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch\n'}
+[13.471238] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch.py\n'}
+[13.471389] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch\n'}
+[13.471504] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar//rviz2\n'}
+[13.471602] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar//rviz2/oradar_scan.rviz\n'}
+[13.471910] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/package_run_dependencies/oradar_lidar\n'}
+[13.472150] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/parent_prefix_path/oradar_lidar\n'}
+[13.472417] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.sh\n'}
+[13.472593] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.dsv\n'}
+[13.472794] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/path.sh\n'}
+[13.472988] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/path.dsv\n'}
+[13.473155] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.bash\n'}
+[13.473345] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.sh\n'}
+[13.473510] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.zsh\n'}
+[13.473664] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.dsv\n'}
+[13.473835] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar/package.dsv\n'}
+[13.474057] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/packages/oradar_lidar\n'}
+[13.474251] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig.cmake\n'}
+[13.474376] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig-version.cmake\n'}
+[13.474524] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/share/oradar_lidar/package.xml\n'}
+[13.475412] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/base/datatype.h\n'}
+[13.475592] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/base/locker.h\n'}
+[13.475762] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/base/thread.h\n'}
+[13.475942] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/base/timer.h\n'}
+[13.476201] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/base/typedef.h\n'}
+[13.476370] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/base/utils.h\n'}
+[13.476536] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/base/v8stdint.h\n'}
+[13.476762] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/common/ChannelDevice.h\n'}
+[13.476999] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/math/angles.h\n'}
+[13.477219] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/network/ActiveSocket.h\n'}
+[13.477384] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/network/PassiveSocket.h\n'}
+[13.477547] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/network/SimpleSocket.h\n'}
+[13.477759] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/network/StatTimer.h\n'}
+[13.477986] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/serial/common.h\n'}
+[13.478141] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/serial/serial.h\n'}
+[13.478417] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/lock.h\n'}
+[13.478593] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/unix.h\n'}
+[13.478767] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/unix_serial.h\n'}
+[13.479011] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/src/ord_lidar_c_api_driver.h\n'}
+[13.479173] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/src/ord_lidar_driver.h\n'}
+[13.479327] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/src/ordlidar_protocol.h\n'}
+[13.479525] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/include/src/filters/FullScanFilter.h\n'}
+[13.479682] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/lib/liboradar_sdk.a\n'}
+[13.481621] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/bin/blocking_test\n'}
+[13.481935] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/bin/non-blocking_test\n'}
+[13.482236] (oradar_lidar) StdoutLine: {'line': b'-- Installing: /ros2_ws/install/oradar_lidar/bin/blocking_c_api_test\n'}
+[13.485484] (oradar_lidar) CommandEnded: {'returncode': 0}
+[13.511535] (oradar_lidar) JobEnded: {'identifier': 'oradar_lidar', 'rc': 0}
+[13.512572] (-) EventReactorShutdown: {}
