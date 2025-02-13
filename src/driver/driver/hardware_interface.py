@@ -563,11 +563,26 @@ def bus_servo_test(board):
 
 def pwm_servo_test(board):
     servo_id = 1
-    board.pwm_servo_set_position(0.5, [[servo_id, 500]])
-    board.pwm_servo_set_offset(servo_id, 0)
-    board.pwm_servo_set_position(0.5, [[servo_id, 1500]])
-    print('offset:', board.pwm_servo_read_offset(servo_id))
-    print('position:', board.pwm_servo_read_position(servo_id))
+    # Define target positions (these values are example limits).
+    # Adjust these numbers according to your servo's specific range.
+    left_position = 500     # one extreme position (e.g., fully left)
+    right_position = 2500   # the other extreme position (e.g., fully right)
+    center_position = 1500  # center position
+
+    # Duration for the servo to reach each position (in seconds)
+    move_duration = 0.5
+
+    print("Moving PWM servo to left extreme...")
+    board.pwm_servo_set_position(move_duration, [[servo_id, left_position]])
+    time.sleep(move_duration + 0.5)  # extra delay for smooth transition
+
+    print("Moving PWM servo to right extreme...")
+    board.pwm_servo_set_position(move_duration, [[servo_id, right_position]])
+    time.sleep(move_duration + 0.5)
+
+    print("Moving PWM servo back to center...")
+    board.pwm_servo_set_position(move_duration, [[servo_id, center_position]])
+    time.sleep(move_duration + 0.5)
 
 if __name__ == "__main__":
     board = Board()
@@ -576,5 +591,7 @@ if __name__ == "__main__":
     # Example commands:
     board.set_led(0.1, 0.9, repeat=1, led_id=1)
     board.set_buzzer(1900, 0.05, 0.01, repeat=1)
-
-    bus_servo_test(board)
+    
+    pwm_servo_test(board)
+#    bus_servo_test(board)
+#    board.bus_servo_set_position(1, [[1, 700], [2, 500]])
