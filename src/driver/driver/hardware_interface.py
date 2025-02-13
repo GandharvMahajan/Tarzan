@@ -565,8 +565,8 @@ def pwm_servo_test(board):
     servo_id = 1
     # Define target positions (these values are example limits).
     # Adjust these numbers according to your servo's specific range.
-    left_position = 500     # one extreme position (e.g., fully left)
-    right_position = 2500   # the other extreme position (e.g., fully right)
+    left_position = 1000     # one extreme position (e.g., fully left)
+    right_position = 2000   # the other extreme position (e.g., fully right)
     center_position = 1500  # center position
 
     # Duration for the servo to reach each position (in seconds)
