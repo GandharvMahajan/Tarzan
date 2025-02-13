@@ -434,7 +434,7 @@ class Board:
 
 
 def pwm_servo_test(board):
-    servo_id = 1
+    servo_id = 3
     # Define target positions (these values are example limits).
     # Adjust these numbers according to your servo's specific range.
     left_position = 1000     # one extreme position (e.g., fully left)
