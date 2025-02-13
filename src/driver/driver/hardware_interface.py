@@ -348,6 +348,7 @@ class Board:
         data = [0x01, duration_ms & 0xFF, 0xFF & (duration_ms >> 8), len(positions)]
         for servo_id, pos in positions:
             data.extend(struct.pack("<BH", servo_id, pos))
+            print("hello")
         self.buf_write(PacketFunction.PACKET_FUNC_PWM_SERVO, data)
 
     # PWM servo command: set servo offset.
