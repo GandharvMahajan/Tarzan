@@ -23,6 +23,7 @@ class PacketFunction(enum.IntEnum):
     PACKET_FUNC_BUZZER = 2      # Buzzer control
     PACKET_FUNC_MOTOR = 3       # Motor control
     PACKET_FUNC_PWM_SERVO = 4   # PWM servo control (servos on board numbered 1-4)
+    PACKET_FUNC_BUS_SERVO = 5   # Bus servo control
     PACKET_FUNC_KEY = 6         # Key/button events
     PACKET_FUNC_IMU = 7         # IMU data
     PACKET_FUNC_GAMEPAD = 8     # Gamepad data
@@ -127,6 +128,7 @@ class Board:
             PacketFunction.PACKET_FUNC_KEY: self.packet_report_key,
             PacketFunction.PACKET_FUNC_IMU: self.packet_report_imu,
             PacketFunction.PACKET_FUNC_GAMEPAD: self.packet_report_gamepad,
+            PacketFunction.PACKET_FUNC_BUS_SERVO: self.packet_report_serial_servo,
             PacketFunction.PACKET_FUNC_SBUS: self.packet_report_sbus,
             PacketFunction.PACKET_FUNC_PWM_SERVO: self.packet_report_pwm_servo
         }
@@ -166,6 +168,13 @@ class Board:
     def packet_report_sbus(self, data):
         try:
             self.sbus_queue.put_nowait(data)
+        except queue.Full:
+            pass
+
+    # Bus servo data packet parser.
+    def packet_report_serial_servo(self, data):
+        try:
+            self.bus_servo_queue.put_nowait(data)
         except queue.Full:
             pass
 
