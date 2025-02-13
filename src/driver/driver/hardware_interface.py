@@ -463,4 +463,4 @@ if __name__ == "__main__":
     board.set_led(0.1, 0.9, repeat=1, led_id=1)
     board.set_buzzer(1900, 0.05, 0.01, repeat=1)
     
-    pwm_servo_test(board)
+    # pwm_servo_test(board)
