@@ -361,6 +361,94 @@ class Board:
     def pwm_servo_read_position(self, servo_id):
         return self.pwm_servo_read_and_unpack(servo_id, 0x05, "<BBH")
 
+    ################################################
+    def bus_servo_enable_torque(self, servo_id, enable):
+        if enable:
+            data = struct.pack("<BB", 0x0B, servo_id)
+        else:
+            data = struct.pack("<BB", 0x0C, servo_id)
+        self.buf_write(PacketFunction.PACKET_FUNC_BUS_SERVO, data)
+        time.sleep(0.02)
+
+    def bus_servo_set_id(self, servo_id_now, servo_id_new):
+        data = struct.pack("<BBB", 0x10, servo_id_now, servo_id_new)
+        self.buf_write(PacketFunction.PACKET_FUNC_BUS_SERVO, data)
+        time.sleep(0.02)
+
+    def bus_servo_set_offset(self, servo_id, offset):
+        data = struct.pack("<BBb", 0x20, servo_id, int(offset))
+        self.buf_write(PacketFunction.PACKET_FUNC_BUS_SERVO, data)
+        time.sleep(0.02)
+
+    def bus_servo_save_offset(self, servo_id):
+        data = struct.pack("<BB", 0x24, servo_id)
+        self.buf_write(PacketFunction.PACKET_FUNC_BUS_SERVO, data)
+        time.sleep(0.02)
+
+    def bus_servo_set_angle_limit(self, servo_id, limit):
+        data = struct.pack("<BBHH", 0x30, servo_id, int(limit[0]), int(limit[1]))
+        self.buf_write(PacketFunction.PACKET_FUNC_BUS_SERVO, data)
+        time.sleep(0.02)
+
+    def bus_servo_set_vin_limit(self, servo_id, limit):
+        data = struct.pack("<BBHH", 0x34, servo_id, int(limit[0]), int(limit[1]))
+        self.buf_write(PacketFunction.PACKET_FUNC_BUS_SERVO, data)
+        time.sleep(0.02)
+
+    def bus_servo_set_temp_limit(self, servo_id, limit):
+        data = struct.pack("<BBb", 0x38, servo_id, int(limit))
+        self.buf_write(PacketFunction.PACKET_FUNC_BUS_SERVO, data)
+        time.sleep(0.02)
+
+    def bus_servo_stop(self, servo_id):
+        data = [0x03, len(servo_id)] 
+        data.extend(struct.pack("<"+'B'*len(servo_id), *servo_id))
+        self.buf_write(PacketFunction.PACKET_FUNC_BUS_SERVO, data)
+
+    def bus_servo_set_position(self, duration, positions):
+        duration = int(duration * 1000)
+        data = [0x01, duration & 0xFF, 0xFF & (duration >> 8), len(positions)] # 0x00 is bus servo sub command
+        for i in positions:
+            data.extend(struct.pack("<BH", i[0], i[1]))
+        self.buf_write(PacketFunction.PACKET_FUNC_BUS_SERVO, data)
+
+    def bus_servo_read_and_unpack(self, servo_id, cmd, unpack):
+        with self.servo_read_lock:
+            self.buf_write(PacketFunction.PACKET_FUNC_BUS_SERVO, [cmd, servo_id])
+            data = self.bus_servo_queue.get(block=True)
+            servo_id, cmd, success, *info = struct.unpack(unpack, data)
+            if success == 0:
+                return info
+
+    def bus_servo_read_id(self, servo_id=254):
+        return self.bus_servo_read_and_unpack(servo_id, 0x12, "<BBbB")
+
+    def bus_servo_read_offset(self, servo_id):
+        return self.bus_servo_read_and_unpack(servo_id, 0x22, "<BBbb")
+    
+    def bus_servo_read_position(self, servo_id):
+        return self.bus_servo_read_and_unpack(servo_id, 0x05, "<BBbh")
+
+    def bus_servo_read_vin(self, servo_id):
+        return self.bus_servo_read_and_unpack(servo_id, 0x07, "<BBbH")
+    
+    def bus_servo_read_temp(self, servo_id):
+        return self.bus_servo_read_and_unpack(servo_id, 0x09, "<BBbB")
+
+    def bus_servo_read_temp_limit(self, servo_id):
+        return self.bus_servo_read_and_unpack(servo_id, 0x3A, "<BBbB")
+
+    def bus_servo_read_angle_limit(self, servo_id):
+        return self.bus_servo_read_and_unpack(servo_id, 0x32, "<BBb2H")
+
+    def bus_servo_read_vin_limit(self, servo_id):
+        return self.bus_servo_read_and_unpack(servo_id, 0x36, "<BBb2H")
+
+    def bus_servo_read_torque_state(self, servo_id):
+        return self.bus_servo_read_and_unpack(servo_id, 0x0D, "<BBbb")
+    
+    ############################################################
+
     # Enable or disable data reception.
     def enable_reception(self, enable=True):
         self.enable_recv = enable
@@ -420,6 +508,48 @@ class Board:
                 time.sleep(0.01)
         self.port.close()
         print("END...")
+
+
+def bus_servo_test(board):
+    board.bus_servo_set_position(1, [[1, 500], [2, 500]])
+    time.sleep(1)
+    board.bus_servo_set_position(2, [[1, 0], [2, 0]])
+    time.sleep(1)
+    board.bus_servo_stop([1, 2])
+    time.sleep(1)
+    
+    servo_id = 1
+    board.bus_servo_set_id(254, servo_id)
+    servo_id = board.bus_servo_read_id()
+    if servo_id is not None:
+        servo_id = servo_id[0]
+        
+        offset_set = -10
+        board.bus_servo_set_offset(servo_id, offset_set)
+        board.bus_servo_save_offset(servo_id)
+        
+        vin_l, vin_h = 4500, 14500
+        board.bus_servo_set_vin_limit(servo_id, [vin_l, vin_h])
+
+        temp_limit = 85
+        board.bus_servo_set_temp_limit(servo_id, temp_limit)
+
+        angle_l, angle_h = 0, 1000
+        board.bus_servo_set_angle_limit(servo_id, [angle_l, angle_h])
+        
+        board.bus_servo_enable_torque(servo_id, 1)
+
+        print('id:', board.bus_servo_read_id(servo_id))
+        print('offset:', board.bus_servo_read_offset(servo_id), offset_set)
+        print('vin:', board.bus_servo_read_vin(servo_id))
+        print('temp:', board.bus_servo_read_temp(servo_id))
+        print('position:', board.bus_servo_read_position(servo_id))
+        print('angle_limit:', board.bus_servo_read_angle_limit(servo_id), [angle_l, angle_h])
+        print('vin_limit:', board.bus_servo_read_vin_limit(servo_id), [vin_l, vin_h])
+        print('temp_limit:', board.bus_servo_read_temp_limit(servo_id), temp_limit)
+        print('torque_state:', board.bus_servo_read_torque_state(servo_id))
+
+
 
 def pwm_servo_test(board):
     servo_id = 1
