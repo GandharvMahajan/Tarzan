@@ -12,15 +12,15 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msgs/ButtonState.msg"
-  "msgs/BuzzerState.msg"
-  "msgs/LedState.msg"
-  "msgs/MotorsState.msg"
-  "msgs/MotorState.msg"
-  "msgs/PWMServoState.msg"
-  "msgs/PWMServoStateDuration.msg"
-  "msgs/Sbus.msg"
-  "srvs/PWMServoState.srv"
+  "msg/ButtonState.msg"
+  "msg/BuzzerState.msg"
+  "msg/LedState.msg"
+  "msg/MotorsState.msg"
+  "msg/MotorState.msg"
+  "msg/PWMServoState.msg"
+  "msg/PWMServoStateDuration.msg"
+  "msg/Sbus.msg"
+  "srv/PWMServoState.srv"
   DEPENDENCIES std_msgs
 )
 
