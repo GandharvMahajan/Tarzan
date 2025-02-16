@@ -1,4 +1,4 @@
-resource/PWMServoState[] cmd
+msgs_srvs/PWMServoState[] cmd
 ---
 bool success
-resource/PWMServoState[] state
+msgs_srvs/PWMServoState[] state

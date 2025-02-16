@@ -1,2 +1,2 @@
-resource/PWMServoState[] state
+msgs_srvs/PWMServoState[] state
 float64 duration

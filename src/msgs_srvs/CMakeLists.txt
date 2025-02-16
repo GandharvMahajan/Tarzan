@@ -15,6 +15,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msgs/ButtonState.msg"
   "msgs/BuzzerState.msg"
   "msgs/LedState.msg"
+  "msgs/MotorsState.msg"
+  "msgs/MotorState.msg"
   "msgs/PWMServoState.msg"
   "msgs/PWMServoStateDuration.msg"
   "msgs/Sbus.msg"

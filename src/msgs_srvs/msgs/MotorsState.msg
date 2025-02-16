@@ -1,1 +1,1 @@
-resource/MotorState[] data
+msgs_srvs/MotorState[] data
