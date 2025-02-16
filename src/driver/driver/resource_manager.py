@@ -2,9 +2,9 @@ import rclpy
 import time
 import math
 from rclpy.node import Node
-from hardware_interface import Board, PacketReportKeyEvents
+from .hardware_interface import Board, PacketReportKeyEvents
 from sensor_msgs.msg import Imu, Joy
-from resource.msgs import Sbus, ButtonState, MotorsState, PWMServoStateDuration, LedState, BuzzerState
+from /ros2_ws/src/driver/driver.resource import Sbus, ButtonState, MotorsState, PWMServoStateDuration, LedState, BuzzerState
 from resource.srv import PWMServoState
 from std_msgs.msg import UInt16, Bool
 from std_srvs.srv import Trigger

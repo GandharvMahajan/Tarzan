@@ -1,0 +1,3 @@
+[console_scripts]
+resource_manager = driver.resource_manager:main
+

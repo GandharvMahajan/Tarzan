@@ -1,0 +1,17 @@
+[0.965s] Invoking command in '/ros2_ws/build/driver': PYTHONPATH=/ros2_ws/build/driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /ros2_ws/build/driver/build --no-deps symlink_data
+[1.308s] running develop
+[1.501s] running egg_info
+[1.501s] writing driver.egg-info/PKG-INFO
+[1.502s] writing dependency_links to driver.egg-info/dependency_links.txt
+[1.508s] writing entry points to driver.egg-info/entry_points.txt
+[1.509s] writing requirements to driver.egg-info/requires.txt
+[1.512s] writing top-level names to driver.egg-info/top_level.txt
+[1.516s] reading manifest file 'driver.egg-info/SOURCES.txt'
+[1.517s] writing manifest file 'driver.egg-info/SOURCES.txt'
+[1.520s] running build_ext
+[1.520s] Creating /ros2_ws/install/driver/lib/python3.10/site-packages/driver.egg-link (link to .)
+[1.522s] Installing resource_manager script to /ros2_ws/install/driver/lib/driver
+[1.522s] 
+[1.522s] Installed /ros2_ws/build/driver
+[1.522s] running symlink_data
+[1.599s] Invoked command in '/ros2_ws/build/driver' returned '0': PYTHONPATH=/ros2_ws/build/driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /ros2_ws/build/driver/build --no-deps symlink_data
