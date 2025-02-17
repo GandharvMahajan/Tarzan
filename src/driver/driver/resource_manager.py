@@ -17,6 +17,7 @@ class ResourceManager(Node):
         rclpy.init()
         super().__init__(name)
         self.board = Board()
+        self.running = True
 
         # Enable board reception immediately and mark it as enabled.
         self.board.enable_reception()
