@@ -33,7 +33,7 @@ class ResourceManager(Node):
         self.battery_pub = self.create_publisher(UInt16, '~/battery', 1)
 
         # Subscriptions
-        self.create_subscriptions(LedState, '~/set_led', self.set_led_state, 5)
+        self.create_subscription(LedState, '~/set_led', self.set_led_state, 5)
         self.create_subscription(BuzzerState, '~/set_buzzer', self.set_buzzer_state, 5)
         # self.create_subscription(OLEDState, '~/set_oled', self.set_oled_state, 5)
         self.create_subscription(MotorsState, '~/set_motor', self.set_motor_state, 10)
