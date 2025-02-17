@@ -4,8 +4,8 @@ import math
 from rclpy.node import Node
 from .hardware_interface import Board, PacketReportKeyEvents
 from sensor_msgs.msg import Imu, Joy
-from msgs_srvs.msgs import Sbus, ButtonState, MotorsState, PWMServoStateDuration, LedState, BuzzerState
-from msgs_srvs.srvs import PWMServoState
+from msgs_srvs.msg import Sbus, ButtonState, MotorsState, PWMServoStateDuration, LedState, BuzzerState
+from msgs_srvs.srv import PWMServoState
 from std_msgs.msg import UInt16, Bool
 from std_srvs.srv import Trigger
 import threading
