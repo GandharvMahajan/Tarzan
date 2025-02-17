@@ -4,7 +4,7 @@ import math
 from rclpy.node import Node
 from .hardware_interface import Board, PacketReportKeyEvents
 from sensor_msgs.msg import Imu, Joy
-from msgs_srvs.msg import Sbus, ButtonState, MotorsState, PWMServoStateDuration, LedState, BuzzerState
+from msgs_srvs.msg import ButtonState, MotorsState, PWMServoStateDuration, LedState, BuzzerState
 from msgs_srvs.srv import PWMServoState
 from std_msgs.msg import UInt16, Bool
 from std_srvs.srv import Trigger
@@ -34,7 +34,6 @@ class ResourceManager(Node):
         # Publisher
         self.imu_pub = self.create_publisher(Imu, '~/imu_raw', 1)
         self.joy_pub = self.create_publisher(Joy, '~/joy', 1)
-        self.sbus_pub = self.create_publisher(Sbus, '~/sbus', 1)
         self.button_pub = self.create_publisher(ButtonState, '~/button', 1)
         self.battery_pub = self.create_publisher(UInt16, '~/battery', 1)
 
@@ -86,7 +85,6 @@ class ResourceManager(Node):
                 self.pub_button_data(self.button_pub)
                 self.pub_joy_data(self.joy_pub)
                 self.pub_imu_data(self.imu_pub)
-                self.pub_sbus_data(self.sbus_pub)
                 self.pub_battery_data(self.battery_pub)
                 time.sleep(0.02)
             else:
@@ -176,14 +174,6 @@ class ResourceManager(Node):
             msg = Joy()
             msg.axes = data[0]
             msg.buttons = data[1]
-            msg.header.stamp = self.clock.now().to_msg()
-            pub.publish(msg)
-
-    def pub_sbus_data(self, pub):
-        data = self.board.get_sbus()
-        if data is not None:
-            msg = Sbus()
-            msg.channel = data
             msg.header.stamp = self.clock.now().to_msg()
             pub.publish(msg)
 
