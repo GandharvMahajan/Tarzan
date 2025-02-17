@@ -25,6 +25,8 @@ class ResourceManager(Node):
 
         self.declare_parameter('imu_frame', 'imu_link')
         self.declare_parameter('init_finish', False)
+        self.IMU_FRAME = self.get_parameter('imu_frame').value
+        self.gravity = 9.80665
         
         # Hardcoded servo offset values:
         self.servo_offsets = {1: 0, 2: 0, 3: 4, 4: 0}
