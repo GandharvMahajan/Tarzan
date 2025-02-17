@@ -25,6 +25,9 @@ class ResourceManager(Node):
         self.declare_parameter('imu_frame', 'imu_link')
         self.declare_parameter('init_finish', False)
         
+        # Hardcoded servo offset values:
+        self.servo_offsets = {1: 0, 2: 0, 3: 4, 4: 0}
+
         # Publisher
         self.imu_pub = self.create_publisher(Imu, '~/imu_raw', 1)
         self.joy_pub = self.create_publisher(Joy, '~/joy', 1)
@@ -57,32 +60,18 @@ class ResourceManager(Node):
 
     def load_servo_offsets(self):
         """
-        Read and set PWM servo offsets from a YAML file.
+        Load and apply PWM servo offsets from a hardcoded dictionary.
+        The dictionary keys are servo IDs and values are the offsets.
         """
-        config_path = '/home/ubuntu/software/Servo_upper_computer/servo_config.yaml'
-        try:
-            with open(config_path, 'r') as file:
-                config = yaml.safe_load(file)
-
-            if not isinstance(config, dict):
-                self.get_logger().error(f"YAML configuration error: {config_path} should be a dictionary.")
-                return
-
-            # Iterate over servo IDs 1 to 4 and set their offsets.
-            for servo_id in range(1, 5):
-                offset = config.get(servo_id, 0)  # Default offset is 0 if not specified.
-                try:
-                    self.board.pwm_servo_set_offset(servo_id, offset)
-                    self.get_logger().info(f"Set PWM servo {servo_id} offset to {offset}")
-                except Exception as e:
-                    self.get_logger().error(f"Error setting PWM servo {servo_id} offset: {e}")
-
-        except FileNotFoundError:
-            self.get_logger().error(f"Configuration file not found: {config_path}")
-        except yaml.YAMLError as e:
-            self.get_logger().error(f"YAML parsing error: {e}")
-        except Exception as e:
-            self.get_logger().error(f"Error reading configuration file: {e}")    
+        
+        # Iterate over servo IDs 1 to 4 and apply the offsets.
+        for servo_id in range(1, 5):
+            offset = self.servo_offsets.get(servo_id, 0)  # Default to 0 if not present
+            try:
+                self.board.pwm_servo_set_offset(servo_id, offset)
+                self.get_logger().info(f"Set PWM servo {servo_id} offset to {offset}")
+            except Exception as e:
+                self.get_logger().error(f"Error setting PWM servo {servo_id} offset: {e}")  
 
     def get_node_state(self, request, response):
         response.success = True
