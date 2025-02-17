@@ -1,0 +1,191 @@
+[0.000000] (-) TimerEvent: {}
+[0.000384] (driver) JobQueued: {'identifier': 'driver', 'dependencies': OrderedDict()}
+[0.000423] (msgs_srvs) JobQueued: {'identifier': 'msgs_srvs', 'dependencies': OrderedDict()}
+[0.000446] (oradar_lidar) JobQueued: {'identifier': 'oradar_lidar', 'dependencies': OrderedDict()}
+[0.000802] (driver) JobStarted: {'identifier': 'driver'}
+[0.018211] (msgs_srvs) JobStarted: {'identifier': 'msgs_srvs'}
+[0.023854] (oradar_lidar) JobStarted: {'identifier': 'oradar_lidar'}
+[0.099638] (-) TimerEvent: {}
+[0.200029] (-) TimerEvent: {}
+[0.300375] (-) TimerEvent: {}
+[0.400715] (-) TimerEvent: {}
+[0.404809] (msgs_srvs) JobProgress: {'identifier': 'msgs_srvs', 'progress': 'cmake'}
+[0.405840] (msgs_srvs) JobProgress: {'identifier': 'msgs_srvs', 'progress': 'build'}
+[0.406794] (msgs_srvs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2_ws/build/msgs_srvs', '--', '-j4', '-l4'], 'cwd': '/ros2_ws/build/msgs_srvs', 'env': OrderedDict([('VNCDESKTOP', 'TurboVNC: tarzan-desktop:1 ()'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tarzan-desktop'), ('SSH_AGENT_PID', '180'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros2_ws/src'), ('DESKTOP_SESSION', 'xfce'), ('PANEL_GDK_CORE_DEVICE_EVENTS', '0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-0AIcxmSiet,guid=99988030ea69cf6e8636bfb467b26f07'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('VGL_PROBEGLX', '0'), ('WINDOWID', '41943043'), ('FONT_ENCODINGS_DIRECTORY', '/usr/share/fonts/X11/encodings'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('SESSION_MANAGER', 'local/tarzan-desktop:@/tmp/.ICE-unix/132,unix/tarzan-desktop:/tmp/.ICE-unix/132'), ('XDG_MENU_PREFIX', 'xfce-'), ('VGL_COMPRESS', '0'), ('DISPLAY', ':1.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXdmj2W3/agent.179'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ros2_ws/build/msgs_srvs'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.413571] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'cmake'}
+[0.414679] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'build'}
+[0.416092] (oradar_lidar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2_ws/build/oradar_lidar', '--', '-j4', '-l4'], 'cwd': '/ros2_ws/build/oradar_lidar', 'env': OrderedDict([('VNCDESKTOP', 'TurboVNC: tarzan-desktop:1 ()'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tarzan-desktop'), ('SSH_AGENT_PID', '180'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros2_ws/src'), ('DESKTOP_SESSION', 'xfce'), ('PANEL_GDK_CORE_DEVICE_EVENTS', '0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-0AIcxmSiet,guid=99988030ea69cf6e8636bfb467b26f07'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('VGL_PROBEGLX', '0'), ('WINDOWID', '41943043'), ('FONT_ENCODINGS_DIRECTORY', '/usr/share/fonts/X11/encodings'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('SESSION_MANAGER', 'local/tarzan-desktop:@/tmp/.ICE-unix/132,unix/tarzan-desktop:/tmp/.ICE-unix/132'), ('XDG_MENU_PREFIX', 'xfce-'), ('VGL_COMPRESS', '0'), ('DISPLAY', ':1.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXdmj2W3/agent.179'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ros2_ws/build/oradar_lidar'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.465754] (msgs_srvs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.501779] (-) TimerEvent: {}
+[0.542877] (oradar_lidar) StdoutLine: {'line': b'[ 60%] Built target oradar_sdk\n'}
+[0.604761] (-) TimerEvent: {}
+[0.620810] (oradar_lidar) StdoutLine: {'line': b'[ 70%] Built target blocking_test\n'}
+[0.637474] (oradar_lidar) StdoutLine: {'line': b'[ 80%] Built target oradar_scan\n'}
+[0.643528] (oradar_lidar) StdoutLine: {'line': b'[ 90%] Built target non-blocking_test\n'}
+[0.647233] (oradar_lidar) StdoutLine: {'line': b'[100%] Built target blocking_c_api_test\n'}
+[0.668132] (oradar_lidar) CommandEnded: {'returncode': 0}
+[0.669240] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'install'}
+[0.686305] (oradar_lidar) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros2_ws/build/oradar_lidar'], 'cwd': '/ros2_ws/build/oradar_lidar', 'env': OrderedDict([('VNCDESKTOP', 'TurboVNC: tarzan-desktop:1 ()'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tarzan-desktop'), ('SSH_AGENT_PID', '180'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros2_ws/src'), ('DESKTOP_SESSION', 'xfce'), ('PANEL_GDK_CORE_DEVICE_EVENTS', '0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-0AIcxmSiet,guid=99988030ea69cf6e8636bfb467b26f07'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('VGL_PROBEGLX', '0'), ('WINDOWID', '41943043'), ('FONT_ENCODINGS_DIRECTORY', '/usr/share/fonts/X11/encodings'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('SESSION_MANAGER', 'local/tarzan-desktop:@/tmp/.ICE-unix/132,unix/tarzan-desktop:/tmp/.ICE-unix/132'), ('XDG_MENU_PREFIX', 'xfce-'), ('VGL_COMPRESS', '0'), ('DISPLAY', ':1.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXdmj2W3/agent.179'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ros2_ws/build/oradar_lidar'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.702759] (oradar_lidar) StdoutLine: {'line': b'-- Install configuration: "RELEASE"\n'}
+[0.703922] (oradar_lidar) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.704757] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/bin/blocking_test\n'}
+[0.704951] (-) TimerEvent: {}
+[0.706704] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/bin/non-blocking_test\n'}
+[0.706916] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/bin/blocking_c_api_test\n'}
+[0.707009] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/datatype.h\n'}
+[0.707076] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/locker.h\n'}
+[0.707138] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/thread.h\n'}
+[0.707286] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/timer.h\n'}
+[0.707701] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/typedef.h\n'}
+[0.708081] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/utils.h\n'}
+[0.708460] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/v8stdint.h\n'}
+[0.710712] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/common/ChannelDevice.h\n'}
+[0.727226] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/math/angles.h\n'}
+[0.727329] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/ActiveSocket.h\n'}
+[0.727399] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/PassiveSocket.h\n'}
+[0.727467] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/SimpleSocket.h\n'}
+[0.727527] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/StatTimer.h\n'}
+[0.727587] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/common.h\n'}
+[0.727656] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/serial.h\n'}
+[0.727730] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/lock.h\n'}
+[0.727790] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/unix.h\n'}
+[0.727850] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/unix_serial.h\n'}
+[0.729783] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/ord_lidar_c_api_driver.h\n'}
+[0.729923] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/ord_lidar_driver.h\n'}
+[0.729994] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/ordlidar_protocol.h\n'}
+[0.730064] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/filters/FullScanFilter.h\n'}
+[0.730132] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/lib/liboradar_sdk.a\n'}
+[0.730201] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/lib/oradar_lidar/oradar_scan\n'}
+[0.730268] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch\n'}
+[0.730334] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch.py\n'}
+[0.730402] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch\n'}
+[0.730477] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch.py\n'}
+[0.730548] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//rviz2/oradar_scan.rviz\n'}
+[0.730642] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/package_run_dependencies/oradar_lidar\n'}
+[0.730748] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/parent_prefix_path/oradar_lidar\n'}
+[0.730849] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.sh\n'}
+[0.731052] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.dsv\n'}
+[0.731168] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/path.sh\n'}
+[0.731338] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/path.dsv\n'}
+[0.731519] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.bash\n'}
+[0.731631] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.sh\n'}
+[0.731762] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.zsh\n'}
+[0.731852] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.dsv\n'}
+[0.731942] (oradar_lidar) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/package.dsv\n'}
+[0.756541] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/packages/oradar_lidar\n'}
+[0.757248] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig.cmake\n'}
+[0.757492] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig-version.cmake\n'}
+[0.757717] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/package.xml\n'}
+[0.765151] (oradar_lidar) CommandEnded: {'returncode': 0}
+[0.766013] (msgs_srvs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.776184] (msgs_srvs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.805174] (-) TimerEvent: {}
+[0.811951] (msgs_srvs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.813006] (oradar_lidar) JobEnded: {'identifier': 'oradar_lidar', 'rc': 0}
+[0.815697] (msgs_srvs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.825341] (msgs_srvs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.838165] (msgs_srvs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.860158] (msgs_srvs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.876546] (msgs_srvs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.885741] (msgs_srvs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.905276] (-) TimerEvent: {}
+[1.005695] (-) TimerEvent: {}
+[1.048438] (driver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/ros2_ws/build/driver/build', '--no-deps', 'symlink_data'], 'cwd': '/ros2_ws/build/driver', 'env': {'VNCDESKTOP': 'TurboVNC: tarzan-desktop:1 ()', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'HOSTNAME': 'tarzan-desktop', 'SSH_AGENT_PID': '180', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/ros2_ws/src', 'DESKTOP_SESSION': 'xfce', 'PANEL_GDK_CORE_DEVICE_EVENTS': '0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-0AIcxmSiet,guid=99988030ea69cf6e8636bfb467b26f07', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'VGL_PROBEGLX': '0', 'WINDOWID': '41943043', 'FONT_ENCODINGS_DIRECTORY': '/usr/share/fonts/X11/encodings', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SESSION_MANAGER': 'local/tarzan-desktop:@/tmp/.ICE-unix/132,unix/tarzan-desktop:/tmp/.ICE-unix/132', 'XDG_MENU_PREFIX': 'xfce-', 'VGL_COMPRESS': '0', 'DISPLAY': ':1.0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'XFCE', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/tmp/ssh-XXXXXXdmj2W3/agent.179', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/ros2_ws/build/driver', 'XDG_CONFIG_DIRS': '/etc/xdg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share', 'PYTHONPATH': '/ros2_ws/build/driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/driver/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.105788] (-) TimerEvent: {}
+[1.206217] (-) TimerEvent: {}
+[1.306615] (-) TimerEvent: {}
+[1.407346] (-) TimerEvent: {}
+[1.421458] (driver) StdoutLine: {'line': b'running develop\n'}
+[1.437922] (msgs_srvs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.507468] (-) TimerEvent: {}
+[1.607886] (-) TimerEvent: {}
+[1.625014] (driver) StdoutLine: {'line': b'running egg_info\n'}
+[1.625367] (driver) StdoutLine: {'line': b'writing driver.egg-info/PKG-INFO\n'}
+[1.625827] (driver) StdoutLine: {'line': b'writing dependency_links to driver.egg-info/dependency_links.txt\n'}
+[1.632230] (driver) StdoutLine: {'line': b'writing entry points to driver.egg-info/entry_points.txt\n'}
+[1.633378] (driver) StdoutLine: {'line': b'writing requirements to driver.egg-info/requires.txt\n'}
+[1.634223] (driver) StdoutLine: {'line': b'writing top-level names to driver.egg-info/top_level.txt\n'}
+[1.641961] (driver) StdoutLine: {'line': b"reading manifest file 'driver.egg-info/SOURCES.txt'\n"}
+[1.643127] (driver) StdoutLine: {'line': b"writing manifest file 'driver.egg-info/SOURCES.txt'\n"}
+[1.645821] (driver) StdoutLine: {'line': b'running build_ext\n'}
+[1.646156] (driver) StdoutLine: {'line': b'Creating /ros2_ws/install/driver/lib/python3.10/site-packages/driver.egg-link (link to .)\n'}
+[1.647631] (driver) StdoutLine: {'line': b'Installing resource_manager script to /ros2_ws/install/driver/lib/driver\n'}
+[1.648066] (driver) StdoutLine: {'line': b'\n'}
+[1.648186] (driver) StdoutLine: {'line': b'Installed /ros2_ws/build/driver\n'}
+[1.648308] (driver) StdoutLine: {'line': b'running symlink_data\n'}
+[1.708181] (-) TimerEvent: {}
+[1.730582] (driver) CommandEnded: {'returncode': 0}
+[1.757914] (driver) JobEnded: {'identifier': 'driver', 'rc': 0}
+[1.808284] (-) TimerEvent: {}
+[1.908632] (-) TimerEvent: {}
+[2.009013] (-) TimerEvent: {}
+[2.024012] (msgs_srvs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.109128] (-) TimerEvent: {}
+[2.209531] (-) TimerEvent: {}
+[2.244051] (msgs_srvs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.280854] (msgs_srvs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.309672] (-) TimerEvent: {}
+[2.315223] (msgs_srvs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.315435] (msgs_srvs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.315509] (msgs_srvs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[2.357936] (msgs_srvs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.379676] (msgs_srvs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.381662] (msgs_srvs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.385349] (msgs_srvs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.409753] (-) TimerEvent: {}
+[2.510119] (-) TimerEvent: {}
+[2.535913] (msgs_srvs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.584355] (msgs_srvs) StdoutLine: {'line': b'-- Build files have been written to: /ros2_ws/build/msgs_srvs\n'}
+[2.610233] (-) TimerEvent: {}
+[2.633359] (msgs_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target msgs_srvs__rosidl_generator_c\x1b[0m\n'}
+[2.660266] (msgs_srvs) StdoutLine: {'line': b'[  1%] Built target msgs_srvs__cpp\n'}
+[2.662839] (msgs_srvs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/msgs_srvs__rosidl_generator_c.dir/rosidl_generator_c/msgs_srvs/msg/detail/pwm_servo_state_duration__functions.c.o\x1b[0m\n'}
+[2.663144] (msgs_srvs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/msgs_srvs__rosidl_generator_c.dir/rosidl_generator_c/msgs_srvs/msg/detail/pwm_servo_state__functions.c.o\x1b[0m\n'}
+[2.678380] (msgs_srvs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_symlink_msgs_srvs\n'}
+[2.686762] (msgs_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target msgs_srvs__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.696929] (msgs_srvs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/ros2_ws/build/msgs_srvs/rosidl_generator_c/msgs_srvs/msg/detail/pwm_servo_state_duration__functions.h:19\x1b[m\x1b[K,\n'}
+[2.697223] (msgs_srvs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/ros2_ws/build/msgs_srvs/rosidl_generator_c/msgs_srvs/msg/detail/pwm_servo_state_duration__functions.c:4\x1b[m\x1b[K:\n'}
+[2.697311] (msgs_srvs) StderrLine: {'line': b'\x1b[01m\x1b[K/ros2_ws/build/msgs_srvs/rosidl_generator_c/msgs_srvs/msg/detail/pwm_servo_state_duration__struct.h:22:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kresource/msg/detail/pwm_servo_state__struct.h: No such file or directory\n'}
+[2.697399] (msgs_srvs) StderrLine: {'line': b'   22 | #include \x1b[01;31m\x1b[K"resource/msg/detail/pwm_servo_state__struct.h"\x1b[m\x1b[K\n'}
+[2.697463] (msgs_srvs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.697523] (msgs_srvs) StderrLine: {'line': b'compilation terminated.\n'}
+[2.697583] (msgs_srvs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/msgs_srvs__rosidl_generator_c.dir/rosidl_generator_c/msgs_srvs/msg/detail/sbus__functions.c.o\x1b[0m\n'}
+[2.698562] (msgs_srvs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/msgs_srvs__rosidl_generator_c.dir/build.make:289: CMakeFiles/msgs_srvs__rosidl_generator_c.dir/rosidl_generator_c/msgs_srvs/msg/detail/pwm_servo_state_duration__functions.c.o] Error 1\n'}
+[2.701874] (msgs_srvs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[2.710820] (-) TimerEvent: {}
+[2.713801] (msgs_srvs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/msgs_srvs/msg/pwm_servo_state__type_support.cpp.o\x1b[0m\n'}
+[2.729767] (msgs_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target msgs_srvs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.763091] (msgs_srvs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/msgs_srvs/msg/pwm_servo_state_duration__type_support.cpp.o\x1b[0m\n'}
+[2.766690] (msgs_srvs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/msgs_srvs/msg/detail/dds_fastrtps/pwm_servo_state__type_support.cpp.o\x1b[0m\n'}
+[2.807810] (msgs_srvs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/msgs_srvs__rosidl_generator_c.dir/all] Error 2\n'}
+[2.808162] (msgs_srvs) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[2.813746] (-) TimerEvent: {}
+[2.823978] (msgs_srvs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/msgs_srvs/msg/sbus__type_support.cpp.o\x1b[0m\n'}
+[2.882121] (msgs_srvs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/ros2_ws/build/msgs_srvs/rosidl_typesupport_cpp/msgs_srvs/msg/pwm_servo_state_duration__type_support.cpp:7\x1b[m\x1b[K:\n'}
+[2.882431] (msgs_srvs) StderrLine: {'line': b'\x1b[01m\x1b[K/ros2_ws/build/msgs_srvs/rosidl_generator_cpp/msgs_srvs/msg/detail/pwm_servo_state_duration__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kresource/msg/detail/pwm_servo_state__struct.hpp: No such file or directory\n'}
+[2.882531] (msgs_srvs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"resource/msg/detail/pwm_servo_state__struct.hpp"\x1b[m\x1b[K\n'}
+[2.882608] (msgs_srvs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.882720] (msgs_srvs) StderrLine: {'line': b'compilation terminated.\n'}
+[2.893629] (msgs_srvs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/build.make:198: CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/msgs_srvs/msg/pwm_servo_state_duration__type_support.cpp.o] Error 1\n'}
+[2.894481] (msgs_srvs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[2.912298] (msgs_srvs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/msgs_srvs/msg/detail/dds_fastrtps/pwm_servo_state_duration__type_support.cpp.o\x1b[0m\n'}
+[2.913869] (-) TimerEvent: {}
+[3.017418] (-) TimerEvent: {}
+[3.034202] (msgs_srvs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/ros2_ws/build/msgs_srvs/rosidl_typesupport_fastrtps_cpp/msgs_srvs/msg/detail/pwm_servo_state_duration__rosidl_typesupport_fastrtps_cpp.hpp:11\x1b[m\x1b[K,\n'}
+[3.034606] (msgs_srvs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/ros2_ws/build/msgs_srvs/rosidl_typesupport_fastrtps_cpp/msgs_srvs/msg/detail/dds_fastrtps/pwm_servo_state_duration__type_support.cpp:4\x1b[m\x1b[K:\n'}
+[3.034819] (msgs_srvs) StderrLine: {'line': b'\x1b[01m\x1b[K/ros2_ws/build/msgs_srvs/rosidl_generator_cpp/msgs_srvs/msg/detail/pwm_servo_state_duration__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kresource/msg/detail/pwm_servo_state__struct.hpp: No such file or directory\n'}
+[3.034997] (msgs_srvs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"resource/msg/detail/pwm_servo_state__struct.hpp"\x1b[m\x1b[K\n'}
+[3.035103] (msgs_srvs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.037760] (msgs_srvs) StderrLine: {'line': b'compilation terminated.\n'}
+[3.042581] (msgs_srvs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/msgs_srvs__rosidl_typesupport_fastrtps_cpp.dir/build.make:221: CMakeFiles/msgs_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/msgs_srvs/msg/detail/dds_fastrtps/pwm_servo_state_duration__type_support.cpp.o] Error 1\n'}
+[3.043025] (msgs_srvs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[3.117558] (-) TimerEvent: {}
+[3.218056] (-) TimerEvent: {}
+[3.291366] (msgs_srvs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/all] Error 2\n'}
+[3.318185] (-) TimerEvent: {}
+[3.418573] (-) TimerEvent: {}
+[3.431282] (msgs_srvs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/msgs_srvs__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2\n'}
+[3.431759] (msgs_srvs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.434917] (msgs_srvs) CommandEnded: {'returncode': 2}
+[3.456781] (msgs_srvs) JobEnded: {'identifier': 'msgs_srvs', 'rc': 2}
+[3.467387] (-) EventReactorShutdown: {}

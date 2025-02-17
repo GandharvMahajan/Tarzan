@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from msgs_srvs/msg/MotorsState.msg
+// generated code does not contain a copyright notice
+
+#include "msgs_srvs/msg/MotorState.idl"
+
+module msgs_srvs {
+  module msg {
+    struct MotorsState {
+      sequence<msgs_srvs::msg::MotorState> data;
+    };
+  };
+};

@@ -1,0 +1,2 @@
+Invoking command in '/ros2_ws/build/msgs_srvs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2_ws/src/msgs_srvs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ros2_ws/install/msgs_srvs
+Invoked command in '/ros2_ws/build/msgs_srvs' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2_ws/src/msgs_srvs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ros2_ws/install/msgs_srvs

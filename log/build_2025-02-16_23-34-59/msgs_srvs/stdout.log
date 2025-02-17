@@ -1,0 +1,58 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /ros2_ws/build/msgs_srvs
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  2%] Built target ament_cmake_python_symlink_msgs_srvs
+running egg_info
+creating msgs_srvs.egg-info
+writing msgs_srvs.egg-info/PKG-INFO
+writing dependency_links to msgs_srvs.egg-info/dependency_links.txt
+writing top-level names to msgs_srvs.egg-info/top_level.txt
+writing manifest file 'msgs_srvs.egg-info/SOURCES.txt'
+reading manifest file 'msgs_srvs.egg-info/SOURCES.txt'
+writing manifest file 'msgs_srvs.egg-info/SOURCES.txt'
+[  2%] Built target ament_cmake_python_build_msgs_srvs_egg
+[  2%] Built target msgs_srvs__cpp
+[  3%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  4%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[  5%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[  6%] [32mBuilding C object CMakeFiles/msgs_srvs__rosidl_generator_c.dir/rosidl_generator_c/msgs_srvs/msg/detail/button_state__functions.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/msgs_srvs__rosidl_generator_c.dir/rosidl_generator_c/msgs_srvs/msg/detail/buzzer_state__functions.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/msgs_srvs__rosidl_generator_c.dir/rosidl_generator_c/msgs_srvs/msg/detail/led_state__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/msgs_srvs__rosidl_generator_c.dir/rosidl_generator_c/msgs_srvs/msg/detail/motors_state__functions.c.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/msgs_srvs/msg/button_state__type_support.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/msgs_srvs/msg/buzzer_state__type_support.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/msgs_srvs/msg/detail/button_state__type_support.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/msgs_srvs/msg/detail/dds_fastrtps/button_state__type_support.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/msgs_srvs/msg/led_state__type_support.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/msgs_srvs/msg/motors_state__type_support.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/msgs_srvs/msg/detail/buzzer_state__type_support.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/msgs_srvs/msg/detail/dds_fastrtps/buzzer_state__type_support.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/msgs_srvs/msg/detail/led_state__type_support.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/msgs_srvs/msg/detail/dds_fastrtps/led_state__type_support.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/msgs_srvs/msg/detail/motors_state__type_support.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/msgs_srvs/msg/detail/dds_fastrtps/motors_state__type_support.cpp.o[0m

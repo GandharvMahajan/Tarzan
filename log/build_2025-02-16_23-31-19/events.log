@@ -1,0 +1,197 @@
+[0.000000] (-) TimerEvent: {}
+[0.000261] (driver) JobQueued: {'identifier': 'driver', 'dependencies': OrderedDict()}
+[0.000299] (msgs_srvs) JobQueued: {'identifier': 'msgs_srvs', 'dependencies': OrderedDict()}
+[0.000322] (oradar_lidar) JobQueued: {'identifier': 'oradar_lidar', 'dependencies': OrderedDict()}
+[0.000782] (driver) JobStarted: {'identifier': 'driver'}
+[0.027768] (msgs_srvs) JobStarted: {'identifier': 'msgs_srvs'}
+[0.035175] (oradar_lidar) JobStarted: {'identifier': 'oradar_lidar'}
+[0.099673] (-) TimerEvent: {}
+[0.200053] (-) TimerEvent: {}
+[0.300399] (-) TimerEvent: {}
+[0.400786] (-) TimerEvent: {}
+[0.435322] (msgs_srvs) JobProgress: {'identifier': 'msgs_srvs', 'progress': 'cmake'}
+[0.436199] (msgs_srvs) Command: {'cmd': ['/usr/bin/cmake', '/ros2_ws/src/msgs_srvs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/ros2_ws/install/msgs_srvs'], 'cwd': '/ros2_ws/build/msgs_srvs', 'env': OrderedDict([('VNCDESKTOP', 'TurboVNC: tarzan-desktop:1 ()'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tarzan-desktop'), ('SSH_AGENT_PID', '180'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros2_ws/src'), ('DESKTOP_SESSION', 'xfce'), ('PANEL_GDK_CORE_DEVICE_EVENTS', '0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-0AIcxmSiet,guid=99988030ea69cf6e8636bfb467b26f07'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('VGL_PROBEGLX', '0'), ('WINDOWID', '41943043'), ('FONT_ENCODINGS_DIRECTORY', '/usr/share/fonts/X11/encodings'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('SESSION_MANAGER', 'local/tarzan-desktop:@/tmp/.ICE-unix/132,unix/tarzan-desktop:/tmp/.ICE-unix/132'), ('XDG_MENU_PREFIX', 'xfce-'), ('VGL_COMPRESS', '0'), ('DISPLAY', ':1.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXdmj2W3/agent.179'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ros2_ws/build/msgs_srvs'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.448246] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'cmake'}
+[0.452214] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'build'}
+[0.454039] (oradar_lidar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2_ws/build/oradar_lidar', '--', '-j4', '-l4'], 'cwd': '/ros2_ws/build/oradar_lidar', 'env': OrderedDict([('VNCDESKTOP', 'TurboVNC: tarzan-desktop:1 ()'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tarzan-desktop'), ('SSH_AGENT_PID', '180'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros2_ws/src'), ('DESKTOP_SESSION', 'xfce'), ('PANEL_GDK_CORE_DEVICE_EVENTS', '0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-0AIcxmSiet,guid=99988030ea69cf6e8636bfb467b26f07'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('VGL_PROBEGLX', '0'), ('WINDOWID', '41943043'), ('FONT_ENCODINGS_DIRECTORY', '/usr/share/fonts/X11/encodings'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('SESSION_MANAGER', 'local/tarzan-desktop:@/tmp/.ICE-unix/132,unix/tarzan-desktop:/tmp/.ICE-unix/132'), ('XDG_MENU_PREFIX', 'xfce-'), ('VGL_COMPRESS', '0'), ('DISPLAY', ':1.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXdmj2W3/agent.179'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ros2_ws/build/oradar_lidar'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.500907] (-) TimerEvent: {}
+[0.577146] (msgs_srvs) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:15:\n'}
+[0.577500] (msgs_srvs) StderrLine: {'line': b'  Syntax Warning in cmake code at column 25\n'}
+[0.577596] (msgs_srvs) StderrLine: {'line': b'\n'}
+[0.577673] (msgs_srvs) StderrLine: {'line': b'  Argument not separated from preceding token by whitespace.\n'}
+[0.577760] (msgs_srvs) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.577844] (msgs_srvs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.577945] (msgs_srvs) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:16:\n'}
+[0.578027] (msgs_srvs) StderrLine: {'line': b'  Syntax Warning in cmake code at column 25\n'}
+[0.578090] (msgs_srvs) StderrLine: {'line': b'\n'}
+[0.578150] (msgs_srvs) StderrLine: {'line': b'  Argument not separated from preceding token by whitespace.\n'}
+[0.578221] (msgs_srvs) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.578295] (msgs_srvs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.578354] (msgs_srvs) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:17:\n'}
+[0.578410] (msgs_srvs) StderrLine: {'line': b'  Syntax Warning in cmake code at column 22\n'}
+[0.578466] (msgs_srvs) StderrLine: {'line': b'\n'}
+[0.578530] (msgs_srvs) StderrLine: {'line': b'  Argument not separated from preceding token by whitespace.\n'}
+[0.578592] (msgs_srvs) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.578650] (msgs_srvs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.578707] (msgs_srvs) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:18:\n'}
+[0.578806] (msgs_srvs) StderrLine: {'line': b'  Syntax Warning in cmake code at column 25\n'}
+[0.578866] (msgs_srvs) StderrLine: {'line': b'\n'}
+[0.578925] (msgs_srvs) StderrLine: {'line': b'  Argument not separated from preceding token by whitespace.\n'}
+[0.578981] (msgs_srvs) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.579037] (msgs_srvs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.579091] (msgs_srvs) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:19:\n'}
+[0.579149] (msgs_srvs) StderrLine: {'line': b'  Syntax Warning in cmake code at column 24\n'}
+[0.579212] (msgs_srvs) StderrLine: {'line': b'\n'}
+[0.579278] (msgs_srvs) StderrLine: {'line': b'  Argument not separated from preceding token by whitespace.\n'}
+[0.579340] (msgs_srvs) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.579403] (msgs_srvs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.579460] (msgs_srvs) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:20:\n'}
+[0.579518] (msgs_srvs) StderrLine: {'line': b'  Syntax Warning in cmake code at column 27\n'}
+[0.579579] (msgs_srvs) StderrLine: {'line': b'\n'}
+[0.579641] (msgs_srvs) StderrLine: {'line': b'  Argument not separated from preceding token by whitespace.\n'}
+[0.579717] (msgs_srvs) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.579834] (msgs_srvs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.579910] (msgs_srvs) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:21:\n'}
+[0.579984] (msgs_srvs) StderrLine: {'line': b'  Syntax Warning in cmake code at column 35\n'}
+[0.580049] (msgs_srvs) StderrLine: {'line': b'\n'}
+[0.580108] (msgs_srvs) StderrLine: {'line': b'  Argument not separated from preceding token by whitespace.\n'}
+[0.580169] (msgs_srvs) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.580227] (msgs_srvs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.580282] (msgs_srvs) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:22:\n'}
+[0.580337] (msgs_srvs) StderrLine: {'line': b'  Syntax Warning in cmake code at column 18\n'}
+[0.580393] (msgs_srvs) StderrLine: {'line': b'\n'}
+[0.580449] (msgs_srvs) StderrLine: {'line': b'  Argument not separated from preceding token by whitespace.\n'}
+[0.580504] (msgs_srvs) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.580560] (msgs_srvs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.601031] (-) TimerEvent: {}
+[0.701454] (-) TimerEvent: {}
+[0.801892] (-) TimerEvent: {}
+[0.848849] (oradar_lidar) StdoutLine: {'line': b'[ 60%] Built target oradar_sdk\n'}
+[0.902878] (-) TimerEvent: {}
+[0.911983] (oradar_lidar) StdoutLine: {'line': b'[ 70%] Built target blocking_c_api_test\n'}
+[0.916133] (oradar_lidar) StdoutLine: {'line': b'[ 80%] Built target non-blocking_test\n'}
+[0.917620] (oradar_lidar) StdoutLine: {'line': b'[ 90%] Built target blocking_test\n'}
+[0.950492] (msgs_srvs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.992456] (oradar_lidar) StdoutLine: {'line': b'[100%] Built target oradar_scan\n'}
+[1.002980] (-) TimerEvent: {}
+[1.013861] (oradar_lidar) CommandEnded: {'returncode': 0}
+[1.018925] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'install'}
+[1.037257] (oradar_lidar) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros2_ws/build/oradar_lidar'], 'cwd': '/ros2_ws/build/oradar_lidar', 'env': OrderedDict([('VNCDESKTOP', 'TurboVNC: tarzan-desktop:1 ()'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tarzan-desktop'), ('SSH_AGENT_PID', '180'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros2_ws/src'), ('DESKTOP_SESSION', 'xfce'), ('PANEL_GDK_CORE_DEVICE_EVENTS', '0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-0AIcxmSiet,guid=99988030ea69cf6e8636bfb467b26f07'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('VGL_PROBEGLX', '0'), ('WINDOWID', '41943043'), ('FONT_ENCODINGS_DIRECTORY', '/usr/share/fonts/X11/encodings'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('SESSION_MANAGER', 'local/tarzan-desktop:@/tmp/.ICE-unix/132,unix/tarzan-desktop:/tmp/.ICE-unix/132'), ('XDG_MENU_PREFIX', 'xfce-'), ('VGL_COMPRESS', '0'), ('DISPLAY', ':1.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXdmj2W3/agent.179'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ros2_ws/build/oradar_lidar'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.056339] (oradar_lidar) StdoutLine: {'line': b'-- Install configuration: "RELEASE"\n'}
+[1.063410] (oradar_lidar) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.065792] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/bin/blocking_test\n'}
+[1.069546] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/bin/non-blocking_test\n'}
+[1.072193] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/bin/blocking_c_api_test\n'}
+[1.072547] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/datatype.h\n'}
+[1.072834] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/locker.h\n'}
+[1.073110] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/thread.h\n'}
+[1.073406] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/timer.h\n'}
+[1.073663] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/typedef.h\n'}
+[1.073882] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/utils.h\n'}
+[1.074159] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/v8stdint.h\n'}
+[1.075969] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/common/ChannelDevice.h\n'}
+[1.076228] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/math/angles.h\n'}
+[1.078124] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/ActiveSocket.h\n'}
+[1.080079] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/PassiveSocket.h\n'}
+[1.082442] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/SimpleSocket.h\n'}
+[1.085290] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/StatTimer.h\n'}
+[1.085584] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/common.h\n'}
+[1.085830] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/serial.h\n'}
+[1.086676] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/lock.h\n'}
+[1.088503] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/unix.h\n'}
+[1.089525] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/unix_serial.h\n'}
+[1.091825] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/ord_lidar_c_api_driver.h\n'}
+[1.094573] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/ord_lidar_driver.h\n'}
+[1.095452] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/ordlidar_protocol.h\n'}
+[1.097674] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/filters/FullScanFilter.h\n'}
+[1.097896] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/lib/liboradar_sdk.a\n'}
+[1.101867] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/lib/oradar_lidar/oradar_scan\n'}
+[1.102402] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch\n'}
+[1.103029] (-) TimerEvent: {}
+[1.104346] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch.py\n'}
+[1.106570] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch\n'}
+[1.107378] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch.py\n'}
+[1.107723] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//rviz2/oradar_scan.rviz\n'}
+[1.109867] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/package_run_dependencies/oradar_lidar\n'}
+[1.112683] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/parent_prefix_path/oradar_lidar\n'}
+[1.113480] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.sh\n'}
+[1.114289] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.dsv\n'}
+[1.114818] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/path.sh\n'}
+[1.115441] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/path.dsv\n'}
+[1.116611] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.bash\n'}
+[1.118508] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.sh\n'}
+[1.120683] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.zsh\n'}
+[1.122757] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.dsv\n'}
+[1.122912] (oradar_lidar) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/package.dsv\n'}
+[1.147505] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/packages/oradar_lidar\n'}
+[1.147843] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig.cmake\n'}
+[1.149133] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig-version.cmake\n'}
+[1.149323] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/package.xml\n'}
+[1.177142] (oradar_lidar) CommandEnded: {'returncode': 0}
+[1.203172] (-) TimerEvent: {}
+[1.284426] (oradar_lidar) JobEnded: {'identifier': 'oradar_lidar', 'rc': 0}
+[1.303321] (-) TimerEvent: {}
+[1.309360] (driver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/ros2_ws/build/driver/build', '--no-deps', 'symlink_data'], 'cwd': '/ros2_ws/build/driver', 'env': {'VNCDESKTOP': 'TurboVNC: tarzan-desktop:1 ()', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'HOSTNAME': 'tarzan-desktop', 'SSH_AGENT_PID': '180', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/ros2_ws/src', 'DESKTOP_SESSION': 'xfce', 'PANEL_GDK_CORE_DEVICE_EVENTS': '0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-0AIcxmSiet,guid=99988030ea69cf6e8636bfb467b26f07', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'VGL_PROBEGLX': '0', 'WINDOWID': '41943043', 'FONT_ENCODINGS_DIRECTORY': '/usr/share/fonts/X11/encodings', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SESSION_MANAGER': 'local/tarzan-desktop:@/tmp/.ICE-unix/132,unix/tarzan-desktop:/tmp/.ICE-unix/132', 'XDG_MENU_PREFIX': 'xfce-', 'VGL_COMPRESS': '0', 'DISPLAY': ':1.0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'XFCE', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/tmp/ssh-XXXXXXdmj2W3/agent.179', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/ros2_ws/build/driver', 'XDG_CONFIG_DIRS': '/etc/xdg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share', 'PYTHONPATH': '/ros2_ws/build/driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/driver/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.374236] (msgs_srvs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.403435] (-) TimerEvent: {}
+[1.416017] (msgs_srvs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.503546] (-) TimerEvent: {}
+[1.557502] (msgs_srvs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.568368] (msgs_srvs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.574652] (msgs_srvs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.575690] (msgs_srvs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.581337] (msgs_srvs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.603664] (-) TimerEvent: {}
+[1.704128] (-) TimerEvent: {}
+[1.722258] (driver) StdoutLine: {'line': b'running develop\n'}
+[1.734821] (msgs_srvs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.747324] (msgs_srvs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.749795] (msgs_srvs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.750034] (msgs_srvs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.767467] (msgs_srvs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.804232] (-) TimerEvent: {}
+[1.904645] (-) TimerEvent: {}
+[1.935853] (driver) StdoutLine: {'line': b'running egg_info\n'}
+[1.936117] (driver) StdoutLine: {'line': b'writing driver.egg-info/PKG-INFO\n'}
+[1.936202] (driver) StdoutLine: {'line': b'writing dependency_links to driver.egg-info/dependency_links.txt\n'}
+[1.942408] (driver) StdoutLine: {'line': b'writing entry points to driver.egg-info/entry_points.txt\n'}
+[1.943537] (driver) StdoutLine: {'line': b'writing requirements to driver.egg-info/requires.txt\n'}
+[1.944041] (driver) StdoutLine: {'line': b'writing top-level names to driver.egg-info/top_level.txt\n'}
+[1.950317] (driver) StdoutLine: {'line': b"reading manifest file 'driver.egg-info/SOURCES.txt'\n"}
+[1.951313] (driver) StdoutLine: {'line': b"writing manifest file 'driver.egg-info/SOURCES.txt'\n"}
+[1.953697] (driver) StdoutLine: {'line': b'running build_ext\n'}
+[1.954061] (driver) StdoutLine: {'line': b'Creating /ros2_ws/install/driver/lib/python3.10/site-packages/driver.egg-link (link to .)\n'}
+[1.955626] (driver) StdoutLine: {'line': b'Installing resource_manager script to /ros2_ws/install/driver/lib/driver\n'}
+[1.956054] (driver) StdoutLine: {'line': b'\n'}
+[1.956181] (driver) StdoutLine: {'line': b'Installed /ros2_ws/build/driver\n'}
+[1.956254] (driver) StdoutLine: {'line': b'running symlink_data\n'}
+[2.004766] (-) TimerEvent: {}
+[2.051196] (msgs_srvs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.052319] (driver) CommandEnded: {'returncode': 0}
+[2.071713] (driver) JobEnded: {'identifier': 'driver', 'rc': 0}
+[2.104883] (-) TimerEvent: {}
+[2.205258] (-) TimerEvent: {}
+[2.216688] (msgs_srvs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.283777] (msgs_srvs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[2.305353] (-) TimerEvent: {}
+[2.384146] (msgs_srvs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.394443] (msgs_srvs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.405434] (-) TimerEvent: {}
+[2.414471] (msgs_srvs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.442303] (msgs_srvs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.477548] (msgs_srvs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.505538] (-) TimerEvent: {}
+[2.507401] (msgs_srvs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.525268] (msgs_srvs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[2.558437] (msgs_srvs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):\n'}
+[2.558691] (msgs_srvs) StderrLine: {'line': b"  rosidl_generate_interfaces() the passed file ',' doesn't exist relative to\n"}
+[2.558837] (msgs_srvs) StderrLine: {'line': b"  the CMAKE_CURRENT_SOURCE_DIR '/ros2_ws/src/msgs_srvs'\n"}
+[2.558917] (msgs_srvs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.558988] (msgs_srvs) StderrLine: {'line': b'  CMakeLists.txt:14 (rosidl_generate_interfaces)\n'}
+[2.559056] (msgs_srvs) StderrLine: {'line': b'\n'}
+[2.559123] (msgs_srvs) StderrLine: {'line': b'\x1b[0m\n'}
+[2.559196] (msgs_srvs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.559593] (msgs_srvs) StdoutLine: {'line': b'See also "/ros2_ws/build/msgs_srvs/CMakeFiles/CMakeOutput.log".\n'}
+[2.569519] (msgs_srvs) CommandEnded: {'returncode': 1}
+[2.594183] (msgs_srvs) JobEnded: {'identifier': 'msgs_srvs', 'rc': 1}
+[2.604664] (-) EventReactorShutdown: {}

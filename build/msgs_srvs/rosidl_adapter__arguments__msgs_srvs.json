@@ -1,0 +1,14 @@
+{
+  "package_name": "msgs_srvs",
+  "non_idl_tuples": [
+    "/ros2_ws/src/msgs_srvs:msg/ButtonState.msg",
+    "/ros2_ws/src/msgs_srvs:msg/BuzzerState.msg",
+    "/ros2_ws/src/msgs_srvs:msg/LedState.msg",
+    "/ros2_ws/src/msgs_srvs:msg/MotorsState.msg",
+    "/ros2_ws/src/msgs_srvs:msg/MotorState.msg",
+    "/ros2_ws/src/msgs_srvs:msg/PWMServoState.msg",
+    "/ros2_ws/src/msgs_srvs:msg/PWMServoStateDuration.msg",
+    "/ros2_ws/src/msgs_srvs:msg/Sbus.msg",
+    "/ros2_ws/src/msgs_srvs:srv/PWMServoState.srv"
+  ]
+}

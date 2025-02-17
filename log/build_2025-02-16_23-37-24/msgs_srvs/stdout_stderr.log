@@ -1,0 +1,49 @@
+[35m[1mConsolidate compiler generated dependencies of target msgs_srvs__rosidl_generator_c[0m
+[  1%] [32mBuilding C object CMakeFiles/msgs_srvs__rosidl_generator_c.dir/rosidl_generator_c/msgs_srvs/msg/detail/motors_state__functions.c.o[0m
+[  2%] [32mBuilding C object CMakeFiles/msgs_srvs__rosidl_generator_c.dir/rosidl_generator_c/msgs_srvs/msg/detail/motor_state__functions.c.o[0m
+[  3%] Built target msgs_srvs__cpp
+[  3%] Built target ament_cmake_python_symlink_msgs_srvs
+In file included from [01m[K/ros2_ws/build/msgs_srvs/rosidl_generator_c/msgs_srvs/msg/detail/motors_state__functions.h:19[m[K,
+                 from [01m[K/ros2_ws/build/msgs_srvs/rosidl_generator_c/msgs_srvs/msg/detail/motors_state__functions.c:4[m[K:
+[01m[K/ros2_ws/build/msgs_srvs/rosidl_generator_c/msgs_srvs/msg/detail/motors_state__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Kresource/msg/detail/motor_state__struct.h: No such file or directory
+   22 | #include [01;31m[K"resource/msg/detail/motor_state__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[35m[1mConsolidate compiler generated dependencies of target msgs_srvs__rosidl_typesupport_cpp[0m
+gmake[2]: *** [CMakeFiles/msgs_srvs__rosidl_generator_c.dir/build.make:307: CMakeFiles/msgs_srvs__rosidl_generator_c.dir/rosidl_generator_c/msgs_srvs/msg/detail/motors_state__functions.c.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[35m[1mConsolidate compiler generated dependencies of target msgs_srvs__rosidl_typesupport_fastrtps_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target msgs_srvs__rosidl_typesupport_introspection_cpp[0m
+[  4%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/msgs_srvs/msg/motors_state__type_support.cpp.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/msgs_srvs/msg/detail/dds_fastrtps/motors_state__type_support.cpp.o[0m
+gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/msgs_srvs__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[  6%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/msgs_srvs/msg/detail/motors_state__type_support.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/msgs_srvs/msg/motor_state__type_support.cpp.o[0m
+In file included from [01m[K/ros2_ws/build/msgs_srvs/rosidl_typesupport_fastrtps_cpp/msgs_srvs/msg/detail/motors_state__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/ros2_ws/build/msgs_srvs/rosidl_typesupport_fastrtps_cpp/msgs_srvs/msg/detail/dds_fastrtps/motors_state__type_support.cpp:4[m[K:
+[01m[K/ros2_ws/build/msgs_srvs/rosidl_generator_cpp/msgs_srvs/msg/detail/motors_state__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kresource/msg/detail/motor_state__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"resource/msg/detail/motor_state__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/msgs_srvs__rosidl_typesupport_fastrtps_cpp.dir/build.make:221: CMakeFiles/msgs_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/msgs_srvs/msg/detail/dds_fastrtps/motors_state__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/msgs_srvs__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[  8%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/msgs_srvs/msg/detail/motor_state__type_support.cpp.o[0m
+In file included from [01m[K/ros2_ws/build/msgs_srvs/rosidl_typesupport_cpp/msgs_srvs/msg/motors_state__type_support.cpp:7[m[K:
+[01m[K/ros2_ws/build/msgs_srvs/rosidl_generator_cpp/msgs_srvs/msg/detail/motors_state__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kresource/msg/detail/motor_state__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"resource/msg/detail/motor_state__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/build.make:192: CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/msgs_srvs/msg/motors_state__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/ros2_ws/build/msgs_srvs/rosidl_typesupport_introspection_cpp/msgs_srvs/msg/detail/motors_state__type_support.cpp:12[m[K:
+[01m[K/ros2_ws/build/msgs_srvs/rosidl_generator_cpp/msgs_srvs/msg/detail/motors_state__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kresource/msg/detail/motor_state__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"resource/msg/detail/motor_state__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[  9%] [32mBuilding CXX object CMakeFiles/msgs_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/msgs_srvs/msg/detail/pwm_servo_state__type_support.cpp.o[0m
+gmake[2]: *** [CMakeFiles/msgs_srvs__rosidl_typesupport_introspection_cpp.dir/build.make:221: CMakeFiles/msgs_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/msgs_srvs/msg/detail/motors_state__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/msgs_srvs__rosidl_typesupport_cpp.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/msgs_srvs__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

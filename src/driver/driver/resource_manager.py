@@ -39,7 +39,7 @@ class ResourceManager(Node):
         self.create_subscription(MotorsState, '~/set_motor', self.set_motor_state, 10)
         self.create_subscription(Bool, '~/enable_reception', self.enable_reception_callback, 1)
         # self.create_subscription(RGBStates, '~/set_rgb', self.set_rgb_states, 10)
-        self.create_subscription(PWMServoStateDuration, '~pwm_servo/set_state', self.set_pwm_servo_state, 10)
+        self.create_subscription(PWMServoStateDuration, '~/pwm_servo/set_state', self.set_pwm_servo_state, 10)
 
         # Services 
         self.create_service(PWMServoState, '~/pwm_servo/get_state', self.get_pwm_servo_state)
