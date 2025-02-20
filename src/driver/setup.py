@@ -21,7 +21,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'resource_manager = driver.resource_manager:main',
+            'control_manager = driver.control_manager:main',
         ],
     },
 )
