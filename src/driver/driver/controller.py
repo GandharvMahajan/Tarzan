@@ -31,6 +31,22 @@ ODOM_TWIST_COVARIANCE = list(map(float,
                          0, 0, 0, 0, 1e6, 0,
                          0, 0, 0, 0, 0, 1e3]))
 
+ODOM_POSE_COVARIANCE_STOP = list(map(float, 
+                            [1e-9, 0, 0, 0, 0, 0, 
+                             0, 1e-3, 1e-9, 0, 0, 0,
+                             0, 0, 1e6, 0, 0, 0,
+                             0, 0, 0, 1e6, 0, 0,
+                             0, 0, 0, 0, 1e6, 0,
+                             0, 0, 0, 0, 0, 1e-9]))
+
+ODOM_TWIST_COVARIANCE_STOP = list(map(float, 
+                            [1e-9, 0, 0, 0, 0, 0, 
+                              0, 1e-3, 1e-9, 0, 0, 0,
+                              0, 0, 1e6, 0, 0, 0,
+                              0, 0, 0, 1e6, 0, 0,
+                              0, 0, 0, 0, 1e6, 0,
+                              0, 0, 0, 0, 0, 1e-9]))
+
 # conver rotation data from roll, pitch, yaw to quaternion because pose.pose.orientation uses quaternion but we calculate robot orientation in rpy (although roll and pitch is 0, and yaw is pose_orientation_z)
 def rpy2qua(roll, pitch, yaw):
     cy = math.cos(yaw*0.5)
@@ -96,9 +112,9 @@ class Controller(Node):
         # Initializing the odom topic
         if self.pub_odom_topic:
             # Odometry contains header (stamp and frame_id), child_frame, pose (position x,y,z | orientation x,y,z,w and covariance) and twist (linear vel x,y,z | angular vel x, y, z and covariance)
-            self.odometry = Odometry()
-            self.odometry.header.frame_id = self.odom_frame_id
-            self.odometry.child_frame_id = self.base_frame_id
+            self.odom = Odometry()
+            self.odom.header.frame_id = self.odom_frame_id
+            self.odom.child_frame_id = self.base_frame_id
             
             # these are mechanical characteristics of the robot, found experimentally I beleive.
             self.odom.pose.covariance = ODOM_POSE_COVARIANCE
@@ -212,6 +228,30 @@ class Controller(Node):
                 self.pose_orientation_z += delta_pose_orientation_z
 
                 # set the odometry 
+                self.odom.pose.pose.position.x = self.linear_correction_factor * self.pose_position_x
+                self.odom.pose.pose.position.y = self.linear_correction_factor * self.pose_position_y
+                self.odom.pose.orientation = rpy2qua(0,0,self.pose_orientation_z)
+                self.odom.twist.twist.linear.x = self.twist_linear_x
+                self.odom.twist.twist.linear.y = self.twist_linear_y
+                self.odom.twist.twist.angular.z = self.twist_angular_z
+
+                if self.twist_linear_x == 0 and self.twist_linear_y == 0 and self.twist_angular_z == 0:
+                    self.odom.pose.covariance = ODOM_POSE_COVARIANCE_STOP
+                    self.odom.twist.covariance = ODOM_TWIST_COVARIANCE_STOP
+                else:
+                    self.odom.pose.covariance = ODOM_POSE_COVARIANCE
+                    self.odom.twist.covariance = ODOM_TWIST_COVARIANCE
+                # publish odom
+                self.odom_pub.publish(self.odom)
+                self.last_time = self.current_time
+                time.sleep(0.02)
+
+def main():
+    node = Controller('controller')
+    rclpy.spin(node)
+
+if __name__ == "__main__":
+    main()
 
 
 

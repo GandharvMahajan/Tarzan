@@ -214,7 +214,7 @@ class ControlManager(Node):
 
 
 def main():
-    node = ControlManager('resource_manager')
+    node = ControlManager('control_manager')
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
