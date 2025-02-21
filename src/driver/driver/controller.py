@@ -185,7 +185,7 @@ class Controller(Node):
                 servo_state.id = [3] # servo is connected to third pwm pin
 
                 # get the servo angle and motor speeds as [theta, MotorState], set speed function changes keyboard commands to servo theta and motor speeds
-                servo_theta, motor_speed = self.ackermann.set_speed(self.twist_linear_x, self.twist_angular_z)
+                servo_theta, motor_speed = self.ackermann.twist_to_wheel_cmd(self.twist_linear_x, self.twist_angular_z)
 
                 # publish the motor speed
                 self.motor_pub.publish(motor_speed)
