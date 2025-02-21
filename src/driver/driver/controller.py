@@ -1,3 +1,7 @@
+'''
+Controller class takes in the twist commands from the user keyboard or joystick and sets the motor speeds and servo theta of the robot. it also publishes the odom_raw topic which tells the robot position in the odom frame.
+This controller doesn't use any sensor not even IMU to calculate position of the robot. It calculates position by integrating the command velocity (/cmd_vel topic) from the keyboard or joystick
+'''
 import rclpy
 import threading
 from rclpy.node import Node
@@ -6,9 +10,10 @@ import ackermann
 from nav_msgs.msg import Odometry
 from std_srvs.srv import Trigger
 import threading
-from msgs_srvs.msg import MotorState, PWMServoStateDuration
+from msgs_srvs.msg import MotorState, PWMServoState, PWMServoStateDuration
 from geometry_msgs.msg import Pose2D, Pose, Twist, PoseWithCovarianceStamped 
-
+import time
+import math
 
 ODOM_POSE_COVARIANCE = list(map(float, 
                         [1e-3, 0, 0, 0, 0, 0, 
@@ -26,6 +31,21 @@ ODOM_TWIST_COVARIANCE = list(map(float,
                          0, 0, 0, 0, 1e6, 0,
                          0, 0, 0, 0, 0, 1e3]))
 
+# conver rotation data from roll, pitch, yaw to quaternion because pose.pose.orientation uses quaternion but we calculate robot orientation in rpy (although roll and pitch is 0, and yaw is pose_orientation_z)
+def rpy2qua(roll, pitch, yaw):
+    cy = math.cos(yaw*0.5)
+    sy = math.sin(yaw*0.5)
+    cp = math.cos(pitch*0.5)
+    sp = math.sin(pitch*0.5)
+    cr = math.cos(roll * 0.5)
+    sr = math.sin(roll * 0.5)
+    
+    q = Pose()
+    q.orientation.w = cy * cp * cr + sy * sp * sr
+    q.orientation.x = cy * cp * sr - sy * sp * cr
+    q.orientation.y = sy * cp * sr + cy * sp * cr
+    q.orientation.z = sy * cp * cr - cy * sp * sr
+    return q.orientation
 
 class Controller(Node):
     def __init__(self, name):
@@ -39,12 +59,19 @@ class Controller(Node):
         # twist.twist.angular.y	0.0	No pitch
 
         # Initialize all other variables
-        self.x = 0.0
-        self.y = 0.0
+        # position x and y and theta in odom frame
+        self.pose_position_x = 0.0
+        self.pose_position_y = 0.0
         self.pose_orientation_z = 0.0
+
+        # velocity in x and y and angular velocity in z
         self.twist_linear_x = 0.0
         self.twist_linear_y = 0.0
         self.twist_angular_z = 0.0
+
+        # this will be needed to calculate the dt or delta time for each publisher loop
+        self.current_time = None
+        self.last_time = None
 
         # Create a custom shutdown for the node, gracefully shutting down the node when user interrupts
         signal.signal(signal.SIGINT, self.shutdown)
@@ -80,8 +107,8 @@ class Controller(Node):
             # create a publisher for odometry
             self.odom_pub = self.create_publisher(Odometry, 'odom_raw', 1)
 
-            # delta t time step for calculating movement in x an y of the odom frame
-            dt = 1.0/50.0
+            # delta t time step for calculating movement in x an y directions in the odom frame
+            self.dt = 1.0/50.0
 
             # start the thread,  daemon = True means that process will end if node is ended if Daemon = False, the thread will complete before closing the node.
             threading.Thread(target=self.calculate_odometry, daemon=True).start()
@@ -110,6 +137,7 @@ class Controller(Node):
             rclpy.shutdown()
 
         def cmd_vel_callback(self, msg):
+            # clipping all the values
             if msg.linear.x > 0.2:
                 msg.linear.x = 0.2
             if msg.linear.x < -0.2:
@@ -123,5 +151,70 @@ class Controller(Node):
             if msg.angular.z < -0.5:
                 msg.angular.z = -0.5
 
+            # setting the forward velocity of the robot from the cmd_vel x velocity (coming from keyboard) 
+            self.twist_linear_x = msg.linear.x
             
+            # if angular z velocity is not zero, which means if the robot is not going straight forward or backward, then we want to set the servo theta
+            if msg.angular.z != 0:
+                # calculate the radius of curvature
+                r = self.twist_linear_x / msg.angular.z
+                # if the radius of curvature is zero then the angular z is inf which again means the robot is going straight forward or backward if r is not 0 then set robot's angular z velocity from the keyboard
+                if r == 0:
+                    self.twist_angular_z = 0
+                else:
+                    self.twist_angular_z = msg.angular.z
+
+                # setting the servo position and duration, the position is set at every 20 ms duartion which corresponds to 50 Hz which ensures that the servo movement is smooth
+                servo_state = PWMServoState() # this message only contains id, position and offset
+                servo_state.id = [3] # servo is connected to third pwm pin
+
+                # get the servo angle and motor speeds as [theta, MotorState], set speed function changes keyboard commands to servo theta and motor speeds
+                servo_theta, motor_speed = self.ackermann.set_speed(self.twist_linear_x, self.twist_angular_z)
+
+                # publish the motor speed
+                self.motor_pub.publish(motor_speed)
+
+                if servo_theta is not None:
+                    servo_state.position = [int(servo_theta)]
+                    # set the servo_state message in Servo state duration message
+                    servo_state_duration = PWMServoStateDuration()
+                    servo_state_duration.state = [servo_state]
+                    servo_state_duration.duration = 0.02 # for smooth movement
+                    self.servo_state_pub.publish(servo_state_duration)
+                
+                else:
+                    # Moving straigh, set only the motor speeds
+                    self.twist_angular_z = 0.0
+                    servo_theta, motor_speed = self.ackermann.set_speed(self.twist_linear_x, self.twist_angular_z)
+                    self.motor_pub.publish(motor_speed)
+
+        # Function for publishing the position of the robot in odom frame 
+        def calculate_odometry(self):
+            while True:
+                self.current_time = time.time()
+
+                if self.last_time is None:
+                    self.dt = 0.0
+                else:
+                    self.dt = self.current_time - self.last_time
+                
+                self.odom.header.stamp = self.clock.now().to_msg()
+
+                # we will calculate the position of the robot through it's velocity becuase keyboard commands doesn't give us position directly, it only gives velocity and angular velocity. This integration is numerical and small errors in velocity from sensors keep adding up in position.
+                # Calculate small delta in position from delta_t
+                delta_pose_position_x = self.twist_linear_x * self.dt * math.cos(self.pose_orientation_z)
+                delta_pose_position_y = self.twist_linear_y * self.dt * math.sin(self.pose_orientation_z)
+                delta_pose_orientation_z = self.twist_angular_z * self.dt
+
+                # Numerical integration
+                self.pose_position_x += delta_pose_position_x
+                self.pose_position_y += delta_pose_position_y
+                self.pose_orientation_z += delta_pose_orientation_z
+
+                # set the odometry 
+
+
+
+
+
             
