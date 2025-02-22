@@ -1,1 +1,0 @@
-/ros2_ws/src/msgs_srvs/msgs/MotorState.msg

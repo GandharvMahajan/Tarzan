@@ -43,9 +43,6 @@ BUILD_SHARED_LIBS:BOOL=OFF
 //Build the testing tree.
 BUILD_TESTING:BOOL=ON
 
-//No help, variable specified on the command line.
-CATKIN_INSTALL_INTO_PREFIX_ROOT:UNINITIALIZED=0
-
 //Use ccache if available
 CCACHE:BOOL=ON
 

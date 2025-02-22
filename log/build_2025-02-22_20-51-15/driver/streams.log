@@ -1,0 +1,46 @@
+[1.018s] Invoking command in '/ros2_ws/src/driver': PYTHONPATH=/ros2_ws/build/driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/driver build --build-base /ros2_ws/build/driver/build install --record /ros2_ws/build/driver/install.log --single-version-externally-managed install_data
+[1.360s] running egg_info
+[1.361s] creating ../../build/driver/driver.egg-info
+[1.361s] writing ../../build/driver/driver.egg-info/PKG-INFO
+[1.361s] writing dependency_links to ../../build/driver/driver.egg-info/dependency_links.txt
+[1.361s] writing entry points to ../../build/driver/driver.egg-info/entry_points.txt
+[1.362s] writing requirements to ../../build/driver/driver.egg-info/requires.txt
+[1.362s] writing top-level names to ../../build/driver/driver.egg-info/top_level.txt
+[1.362s] writing manifest file '../../build/driver/driver.egg-info/SOURCES.txt'
+[1.365s] reading manifest file '../../build/driver/driver.egg-info/SOURCES.txt'
+[1.366s] writing manifest file '../../build/driver/driver.egg-info/SOURCES.txt'
+[1.366s] running build
+[1.366s] running build_py
+[1.366s] creating /ros2_ws/build/driver/build
+[1.366s] creating /ros2_ws/build/driver/build/lib
+[1.366s] creating /ros2_ws/build/driver/build/lib/driver
+[1.366s] copying driver/ackermann.py -> /ros2_ws/build/driver/build/lib/driver
+[1.367s] copying driver/__init__.py -> /ros2_ws/build/driver/build/lib/driver
+[1.367s] copying driver/controller.py -> /ros2_ws/build/driver/build/lib/driver
+[1.367s] copying driver/hardware_interface.py -> /ros2_ws/build/driver/build/lib/driver
+[1.367s] copying driver/control_manager.py -> /ros2_ws/build/driver/build/lib/driver
+[1.367s] running install
+[1.368s] running install_lib
+[1.374s] creating /ros2_ws/install/driver/lib/python3.10/site-packages/driver
+[1.375s] copying /ros2_ws/build/driver/build/lib/driver/ackermann.py -> /ros2_ws/install/driver/lib/python3.10/site-packages/driver
+[1.376s] copying /ros2_ws/build/driver/build/lib/driver/__init__.py -> /ros2_ws/install/driver/lib/python3.10/site-packages/driver
+[1.377s] copying /ros2_ws/build/driver/build/lib/driver/controller.py -> /ros2_ws/install/driver/lib/python3.10/site-packages/driver
+[1.377s] copying /ros2_ws/build/driver/build/lib/driver/hardware_interface.py -> /ros2_ws/install/driver/lib/python3.10/site-packages/driver
+[1.377s] copying /ros2_ws/build/driver/build/lib/driver/control_manager.py -> /ros2_ws/install/driver/lib/python3.10/site-packages/driver
+[1.381s] byte-compiling /ros2_ws/install/driver/lib/python3.10/site-packages/driver/ackermann.py to ackermann.cpython-310.pyc
+[1.383s] byte-compiling /ros2_ws/install/driver/lib/python3.10/site-packages/driver/__init__.py to __init__.cpython-310.pyc
+[1.383s] byte-compiling /ros2_ws/install/driver/lib/python3.10/site-packages/driver/controller.py to controller.cpython-310.pyc
+[1.385s] byte-compiling /ros2_ws/install/driver/lib/python3.10/site-packages/driver/hardware_interface.py to hardware_interface.cpython-310.pyc
+[1.389s] byte-compiling /ros2_ws/install/driver/lib/python3.10/site-packages/driver/control_manager.py to control_manager.cpython-310.pyc
+[1.391s] running install_data
+[1.391s] creating /ros2_ws/install/driver/share/ament_index
+[1.391s] creating /ros2_ws/install/driver/share/ament_index/resource_index
+[1.392s] creating /ros2_ws/install/driver/share/ament_index/resource_index/packages
+[1.392s] copying resource/driver -> /ros2_ws/install/driver/share/ament_index/resource_index/packages
+[1.392s] copying package.xml -> /ros2_ws/install/driver/share/driver
+[1.392s] running install_egg_info
+[1.395s] Copying ../../build/driver/driver.egg-info to /ros2_ws/install/driver/lib/python3.10/site-packages/driver-0.0.0-py3.10.egg-info
+[1.396s] running install_scripts
+[1.425s] Installing control_manager script to /ros2_ws/install/driver/lib/driver
+[1.426s] writing list of installed files to '/ros2_ws/build/driver/install.log'
+[1.506s] Invoked command in '/ros2_ws/src/driver' returned '0': PYTHONPATH=/ros2_ws/build/driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/driver build --build-base /ros2_ws/build/driver/build install --record /ros2_ws/build/driver/install.log --single-version-externally-managed install_data

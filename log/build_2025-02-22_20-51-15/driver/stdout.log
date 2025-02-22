@@ -1,0 +1,44 @@
+running egg_info
+creating ../../build/driver/driver.egg-info
+writing ../../build/driver/driver.egg-info/PKG-INFO
+writing dependency_links to ../../build/driver/driver.egg-info/dependency_links.txt
+writing entry points to ../../build/driver/driver.egg-info/entry_points.txt
+writing requirements to ../../build/driver/driver.egg-info/requires.txt
+writing top-level names to ../../build/driver/driver.egg-info/top_level.txt
+writing manifest file '../../build/driver/driver.egg-info/SOURCES.txt'
+reading manifest file '../../build/driver/driver.egg-info/SOURCES.txt'
+writing manifest file '../../build/driver/driver.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /ros2_ws/build/driver/build
+creating /ros2_ws/build/driver/build/lib
+creating /ros2_ws/build/driver/build/lib/driver
+copying driver/ackermann.py -> /ros2_ws/build/driver/build/lib/driver
+copying driver/__init__.py -> /ros2_ws/build/driver/build/lib/driver
+copying driver/controller.py -> /ros2_ws/build/driver/build/lib/driver
+copying driver/hardware_interface.py -> /ros2_ws/build/driver/build/lib/driver
+copying driver/control_manager.py -> /ros2_ws/build/driver/build/lib/driver
+running install
+running install_lib
+creating /ros2_ws/install/driver/lib/python3.10/site-packages/driver
+copying /ros2_ws/build/driver/build/lib/driver/ackermann.py -> /ros2_ws/install/driver/lib/python3.10/site-packages/driver
+copying /ros2_ws/build/driver/build/lib/driver/__init__.py -> /ros2_ws/install/driver/lib/python3.10/site-packages/driver
+copying /ros2_ws/build/driver/build/lib/driver/controller.py -> /ros2_ws/install/driver/lib/python3.10/site-packages/driver
+copying /ros2_ws/build/driver/build/lib/driver/hardware_interface.py -> /ros2_ws/install/driver/lib/python3.10/site-packages/driver
+copying /ros2_ws/build/driver/build/lib/driver/control_manager.py -> /ros2_ws/install/driver/lib/python3.10/site-packages/driver
+byte-compiling /ros2_ws/install/driver/lib/python3.10/site-packages/driver/ackermann.py to ackermann.cpython-310.pyc
+byte-compiling /ros2_ws/install/driver/lib/python3.10/site-packages/driver/__init__.py to __init__.cpython-310.pyc
+byte-compiling /ros2_ws/install/driver/lib/python3.10/site-packages/driver/controller.py to controller.cpython-310.pyc
+byte-compiling /ros2_ws/install/driver/lib/python3.10/site-packages/driver/hardware_interface.py to hardware_interface.cpython-310.pyc
+byte-compiling /ros2_ws/install/driver/lib/python3.10/site-packages/driver/control_manager.py to control_manager.cpython-310.pyc
+running install_data
+creating /ros2_ws/install/driver/share/ament_index
+creating /ros2_ws/install/driver/share/ament_index/resource_index
+creating /ros2_ws/install/driver/share/ament_index/resource_index/packages
+copying resource/driver -> /ros2_ws/install/driver/share/ament_index/resource_index/packages
+copying package.xml -> /ros2_ws/install/driver/share/driver
+running install_egg_info
+Copying ../../build/driver/driver.egg-info to /ros2_ws/install/driver/lib/python3.10/site-packages/driver-0.0.0-py3.10.egg-info
+running install_scripts
+Installing control_manager script to /ros2_ws/install/driver/lib/driver
+writing list of installed files to '/ros2_ws/build/driver/install.log'
