@@ -143,108 +143,108 @@ class Controller(Node):
         # create service for node operation
         self.create_service(Trigger, '~/init_finish', self.get_node_state)
 
-        def get_node_state(self, request, response):
-            response.success = True
-            return response
+    def get_node_state(self, request, response):
+        response.success = True
+        return response
 
-        # Custom shutdown
-        def shutdown(self, signum, frame):
-            self.get_logger().info('\033[1;32m%s\033[0m' % 'shutdown')
-            rclpy.shutdown()
+    # Custom shutdown
+    def shutdown(self, signum, frame):
+        self.get_logger().info('\033[1;32m%s\033[0m' % 'shutdown')
+        rclpy.shutdown()
 
-        def cmd_vel_callback(self, msg):
-            # clipping all the values
-            if msg.linear.x > 0.2:
-                msg.linear.x = 0.2
-            if msg.linear.x < -0.2:
-                msg.linear.x = -0.2
-            if msg.linear.y > 0.2:
-                msg.linear.y = 0.2
-            if msg.linear.y < -0.2:
-                msg.linear.y = -0.2
-            if msg.angular.z > 0.5:
-                msg.angular.z = 0.5
-            if msg.angular.z < -0.5:
-                msg.angular.z = -0.5
+    def cmd_vel_callback(self, msg):
+        # clipping all the values
+        if msg.linear.x > 0.2:
+            msg.linear.x = 0.2
+        if msg.linear.x < -0.2:
+            msg.linear.x = -0.2
+        if msg.linear.y > 0.2:
+            msg.linear.y = 0.2
+        if msg.linear.y < -0.2:
+            msg.linear.y = -0.2
+        if msg.angular.z > 0.5:
+            msg.angular.z = 0.5
+        if msg.angular.z < -0.5:
+            msg.angular.z = -0.5
 
-            # setting the forward velocity of the robot from the cmd_vel x velocity (coming from keyboard) 
-            self.twist_linear_x = msg.linear.x
+        # setting the forward velocity of the robot from the cmd_vel x velocity (coming from keyboard) 
+        self.twist_linear_x = msg.linear.x
+        
+        # if angular z velocity is not zero, which means if the robot is not going straight forward or backward, then we want to set the servo theta
+        if msg.angular.z != 0:
+            # calculate the radius of curvature
+            r = self.twist_linear_x / msg.angular.z
+            # if the radius of curvature is zero then the angular z is inf which again means the robot is going straight forward or backward if r is not 0 then set robot's angular z velocity from the keyboard
+            if r == 0:
+                self.twist_angular_z = 0
+            else:
+                self.twist_angular_z = msg.angular.z
+
+            # setting the servo position and duration, the position is set at every 20 ms duartion which corresponds to 50 Hz which ensures that the servo movement is smooth
+            servo_state = PWMServoState() # this message only contains id, position and offset
+            servo_state.id = [3] # servo is connected to third pwm pin
+
+            # get the servo angle and motor speeds as [theta, MotorState], set speed function changes keyboard commands to servo theta and motor speeds
+            servo_theta, motor_speed = self.ackermann.twist_to_wheel_cmd(self.twist_linear_x, self.twist_angular_z)
+
+            # publish the motor speed
+            self.motor_pub.publish(motor_speed)
+
+            if servo_theta is not None:
+                servo_state.position = [int(servo_theta)]
+                # set the servo_state message in Servo state duration message
+                servo_state_duration = PWMServoStateDuration()
+                servo_state_duration.state = [servo_state]
+                servo_state_duration.duration = 0.02 # for smooth movement
+                self.servo_state_pub.publish(servo_state_duration)
             
-            # if angular z velocity is not zero, which means if the robot is not going straight forward or backward, then we want to set the servo theta
-            if msg.angular.z != 0:
-                # calculate the radius of curvature
-                r = self.twist_linear_x / msg.angular.z
-                # if the radius of curvature is zero then the angular z is inf which again means the robot is going straight forward or backward if r is not 0 then set robot's angular z velocity from the keyboard
-                if r == 0:
-                    self.twist_angular_z = 0
-                else:
-                    self.twist_angular_z = msg.angular.z
-
-                # setting the servo position and duration, the position is set at every 20 ms duartion which corresponds to 50 Hz which ensures that the servo movement is smooth
-                servo_state = PWMServoState() # this message only contains id, position and offset
-                servo_state.id = [3] # servo is connected to third pwm pin
-
-                # get the servo angle and motor speeds as [theta, MotorState], set speed function changes keyboard commands to servo theta and motor speeds
-                servo_theta, motor_speed = self.ackermann.twist_to_wheel_cmd(self.twist_linear_x, self.twist_angular_z)
-
-                # publish the motor speed
+            else:
+                # Moving straigh, set only the motor speeds
+                self.twist_angular_z = 0.0
+                servo_theta, motor_speed = self.ackermann.set_speed(self.twist_linear_x, self.twist_angular_z)
                 self.motor_pub.publish(motor_speed)
 
-                if servo_theta is not None:
-                    servo_state.position = [int(servo_theta)]
-                    # set the servo_state message in Servo state duration message
-                    servo_state_duration = PWMServoStateDuration()
-                    servo_state_duration.state = [servo_state]
-                    servo_state_duration.duration = 0.02 # for smooth movement
-                    self.servo_state_pub.publish(servo_state_duration)
-                
-                else:
-                    # Moving straigh, set only the motor speeds
-                    self.twist_angular_z = 0.0
-                    servo_theta, motor_speed = self.ackermann.set_speed(self.twist_linear_x, self.twist_angular_z)
-                    self.motor_pub.publish(motor_speed)
+    # Function for publishing the position of the robot in odom frame 
+    def calculate_odometry(self):
+        while True:
+            self.current_time = time.time()
 
-        # Function for publishing the position of the robot in odom frame 
-        def calculate_odometry(self):
-            while True:
-                self.current_time = time.time()
+            if self.last_time is None:
+                self.dt = 0.0
+            else:
+                self.dt = self.current_time - self.last_time
+            
+            self.odom.header.stamp = self.clock.now().to_msg()
 
-                if self.last_time is None:
-                    self.dt = 0.0
-                else:
-                    self.dt = self.current_time - self.last_time
-                
-                self.odom.header.stamp = self.clock.now().to_msg()
+            # we will calculate the position of the robot through it's velocity becuase keyboard commands doesn't give us position directly, it only gives velocity and angular velocity. This integration is numerical and small errors in velocity from sensors keep adding up in position.
+            # Calculate small delta in position from delta_t
+            delta_pose_position_x = self.twist_linear_x * self.dt * math.cos(self.pose_orientation_z)
+            delta_pose_position_y = self.twist_linear_x * self.dt * math.sin(self.pose_orientation_z)
+            delta_pose_orientation_z = self.twist_angular_z * self.dt
 
-                # we will calculate the position of the robot through it's velocity becuase keyboard commands doesn't give us position directly, it only gives velocity and angular velocity. This integration is numerical and small errors in velocity from sensors keep adding up in position.
-                # Calculate small delta in position from delta_t
-                delta_pose_position_x = self.twist_linear_x * self.dt * math.cos(self.pose_orientation_z)
-                delta_pose_position_y = self.twist_linear_x * self.dt * math.sin(self.pose_orientation_z)
-                delta_pose_orientation_z = self.twist_angular_z * self.dt
+            # Numerical integration
+            self.pose_position_x += delta_pose_position_x
+            self.pose_position_y += delta_pose_position_y
+            self.pose_orientation_z += delta_pose_orientation_z
 
-                # Numerical integration
-                self.pose_position_x += delta_pose_position_x
-                self.pose_position_y += delta_pose_position_y
-                self.pose_orientation_z += delta_pose_orientation_z
+            # set the odometry 
+            self.odom.pose.pose.position.x = self.linear_correction_factor * self.pose_position_x
+            self.odom.pose.pose.position.y = self.linear_correction_factor * self.pose_position_y
+            self.odom.pose.orientation = rpy2qua(0,0,self.pose_orientation_z)
+            self.odom.twist.twist.linear.x = self.twist_linear_x
+            self.odom.twist.twist.linear.y = self.twist_linear_y
+            self.odom.twist.twist.angular.z = self.twist_angular_z
 
-                # set the odometry 
-                self.odom.pose.pose.position.x = self.linear_correction_factor * self.pose_position_x
-                self.odom.pose.pose.position.y = self.linear_correction_factor * self.pose_position_y
-                self.odom.pose.orientation = rpy2qua(0,0,self.pose_orientation_z)
-                self.odom.twist.twist.linear.x = self.twist_linear_x
-                self.odom.twist.twist.linear.y = self.twist_linear_y
-                self.odom.twist.twist.angular.z = self.twist_angular_z
-
-                if self.twist_linear_x == 0 and self.twist_linear_y == 0 and self.twist_angular_z == 0:
-                    self.odom.pose.covariance = ODOM_POSE_COVARIANCE_STOP
-                    self.odom.twist.covariance = ODOM_TWIST_COVARIANCE_STOP
-                else:
-                    self.odom.pose.covariance = ODOM_POSE_COVARIANCE
-                    self.odom.twist.covariance = ODOM_TWIST_COVARIANCE
-                # publish odom
-                self.odom_pub.publish(self.odom)
-                self.last_time = self.current_time
-                time.sleep(0.02)
+            if self.twist_linear_x == 0 and self.twist_linear_y == 0 and self.twist_angular_z == 0:
+                self.odom.pose.covariance = ODOM_POSE_COVARIANCE_STOP
+                self.odom.twist.covariance = ODOM_TWIST_COVARIANCE_STOP
+            else:
+                self.odom.pose.covariance = ODOM_POSE_COVARIANCE
+                self.odom.twist.covariance = ODOM_TWIST_COVARIANCE
+            # publish odom
+            self.odom_pub.publish(self.odom)
+            self.last_time = self.current_time
+            time.sleep(0.02)
 
 def main():
     node = Controller('controller')
