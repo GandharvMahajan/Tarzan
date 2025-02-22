@@ -219,7 +219,7 @@ class Controller(Node):
                 # we will calculate the position of the robot through it's velocity becuase keyboard commands doesn't give us position directly, it only gives velocity and angular velocity. This integration is numerical and small errors in velocity from sensors keep adding up in position.
                 # Calculate small delta in position from delta_t
                 delta_pose_position_x = self.twist_linear_x * self.dt * math.cos(self.pose_orientation_z)
-                delta_pose_position_y = self.twist_linear_y * self.dt * math.sin(self.pose_orientation_z)
+                delta_pose_position_y = self.twist_linear_x * self.dt * math.sin(self.pose_orientation_z)
                 delta_pose_orientation_z = self.twist_angular_z * self.dt
 
                 # Numerical integration
