@@ -222,9 +222,9 @@ def main():
         node.board.set_motor_speed([[1, 0], [2, 0], [3, 0], [4, 0]])
         node.destroy_node()
         rclpy.shutdown()
-        print('shutdown resource manager')
+        print('shutdown control manager')
     finally:
-        print('shutdown resource manager finish')
+        print('shutdown control manager finish')
 
 
 if __name__ == '__main__':

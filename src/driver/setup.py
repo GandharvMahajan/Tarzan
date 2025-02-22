@@ -22,6 +22,7 @@ setup(
     entry_points={
         'console_scripts': [
             'control_manager = driver.control_manager:main',
+            'controller = driver.controller:main',
         ],
     },
 )
