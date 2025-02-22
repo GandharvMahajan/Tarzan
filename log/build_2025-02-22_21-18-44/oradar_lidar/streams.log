@@ -1,0 +1,125 @@
+[0.500s] Invoking command in '/ros2_ws/build/oradar_lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/install/driver:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/oradar_lidar -- -j4 -l4
+[0.595s] [0m=============================================================[0m
+[0.595s] [0m-- ROS Not Found, Ros Support is turned Off![0m
+[0.595s] [0m=============================================================[0m
+[1.064s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.210s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.213s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.223s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.248s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.282s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.355s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.357s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.606s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.721s] [0m=============================================================[0m
+[1.721s] [0m-- ROS2 Found. ROS2 Support is turned On![0m
+[1.721s] [0m=============================================================[0m
+[1.722s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.793s] [0mCMake Deprecation Warning at sdk/CMakeLists.txt:36 (cmake_policy):
+[1.793s]   The OLD behavior for policy CMP0053 will be removed from a future version
+[1.793s]   of CMake.
+[1.793s] 
+[1.793s]   The cmake-policies(7) manual explains that the OLD behaviors of all
+[1.793s]   policies are deprecated and that a policy should be set to OLD only under
+[1.793s]   specific short-term circumstances.  Projects should be ported to the NEW
+[1.793s]   behavior and not rely on setting a policy to OLD.
+[1.793s] 
+[1.793s] [0m
+[1.793s] [0mCMake Deprecation Warning at sdk/CMakeLists.txt:39 (cmake_policy):
+[1.793s]   The OLD behavior for policy CMP0037 will be removed from a future version
+[1.793s]   of CMake.
+[1.794s] 
+[1.794s]   The cmake-policies(7) manual explains that the OLD behaviors of all
+[1.794s]   policies are deprecated and that a policy should be set to OLD only under
+[1.794s]   specific short-term circumstances.  Projects should be ported to the NEW
+[1.794s]   behavior and not rely on setting a policy to OLD.
+[1.794s] 
+[1.794s] [0m
+[1.794s] [0mCMake Deprecation Warning at sdk/CMakeLists.txt:42 (cmake_policy):
+[1.795s]   The OLD behavior for policy CMP0043 will be removed from a future version
+[1.795s]   of CMake.
+[1.795s] 
+[1.795s]   The cmake-policies(7) manual explains that the OLD behaviors of all
+[1.795s]   policies are deprecated and that a policy should be set to OLD only under
+[1.795s]   specific short-term circumstances.  Projects should be ported to the NEW
+[1.795s]   behavior and not rely on setting a policy to OLD.
+[1.795s] 
+[1.796s] [0m
+[1.798s] -- Could NOT find SWIG (missing: SWIG_EXECUTABLE SWIG_DIR) 
+[1.882s] [0mCMake Deprecation Warning at sdk/cmake/install_package.cmake:101 (cmake_policy):
+[1.882s]   The OLD behavior for policy CMP0026 will be removed from a future version
+[1.883s]   of CMake.
+[1.883s] 
+[1.883s]   The cmake-policies(7) manual explains that the OLD behaviors of all
+[1.883s]   policies are deprecated and that a policy should be set to OLD only under
+[1.883s]   specific short-term circumstances.  Projects should be ported to the NEW
+[1.883s]   behavior and not rely on setting a policy to OLD.
+[1.883s] Call Stack (most recent call first):
+[1.883s]   sdk/CMakeLists.txt:105 (install_package)
+[1.883s] 
+[1.883s] [0m
+[2.067s] -- Configuring done
+[2.161s] -- Generating done
+[2.223s] -- Build files have been written to: /ros2_ws/build/oradar_lidar
+[2.301s] [35m[1mConsolidate compiler generated dependencies of target oradar_sdk[0m
+[2.336s] [ 60%] Built target oradar_sdk
+[2.373s] [35m[1mConsolidate compiler generated dependencies of target oradar_scan[0m
+[2.382s] [35m[1mConsolidate compiler generated dependencies of target blocking_c_api_test[0m
+[2.389s] [35m[1mConsolidate compiler generated dependencies of target blocking_test[0m
+[2.389s] [35m[1mConsolidate compiler generated dependencies of target non-blocking_test[0m
+[2.415s] [ 70%] Built target oradar_scan
+[2.416s] [ 80%] Built target blocking_c_api_test
+[2.423s] [ 90%] Built target blocking_test
+[2.424s] [100%] Built target non-blocking_test
+[2.446s] Invoked command in '/ros2_ws/build/oradar_lidar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/install/driver:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/oradar_lidar -- -j4 -l4
+[2.450s] Invoking command in '/ros2_ws/build/oradar_lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/install/driver:/opt/ros/humble /usr/bin/cmake --install /ros2_ws/build/oradar_lidar
+[2.481s] -- Install configuration: "RELEASE"
+[2.482s] -- Execute custom install script
+[2.483s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/bin/blocking_test
+[2.483s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/bin/non-blocking_test
+[2.483s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/bin/blocking_c_api_test
+[2.484s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/datatype.h
+[2.484s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/locker.h
+[2.484s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/thread.h
+[2.484s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/timer.h
+[2.485s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/typedef.h
+[2.485s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/utils.h
+[2.485s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/v8stdint.h
+[2.485s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/common/ChannelDevice.h
+[2.486s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/math/angles.h
+[2.486s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/ActiveSocket.h
+[2.486s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/PassiveSocket.h
+[2.486s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/SimpleSocket.h
+[2.487s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/StatTimer.h
+[2.487s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/common.h
+[2.487s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/serial.h
+[2.488s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/lock.h
+[2.488s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/unix.h
+[2.488s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/unix_serial.h
+[2.488s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/ord_lidar_c_api_driver.h
+[2.488s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/ord_lidar_driver.h
+[2.489s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/ordlidar_protocol.h
+[2.489s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/filters/FullScanFilter.h
+[2.489s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/lib/liboradar_sdk.a
+[2.489s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/lib/oradar_lidar/oradar_scan
+[2.490s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch
+[2.490s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch.py
+[2.490s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch
+[2.490s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch.py
+[2.491s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//rviz2/oradar_scan.rviz
+[2.491s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/package_run_dependencies/oradar_lidar
+[2.491s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/parent_prefix_path/oradar_lidar
+[2.492s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.sh
+[2.492s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.dsv
+[2.492s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/path.sh
+[2.492s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/path.dsv
+[2.492s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.bash
+[2.493s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.sh
+[2.493s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.zsh
+[2.493s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.dsv
+[2.493s] -- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/package.dsv
+[2.514s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/packages/oradar_lidar
+[2.519s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig.cmake
+[2.520s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig-version.cmake
+[2.520s] -- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/package.xml
+[2.522s] Invoked command in '/ros2_ws/build/oradar_lidar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/install/driver:/opt/ros/humble /usr/bin/cmake --install /ros2_ws/build/oradar_lidar

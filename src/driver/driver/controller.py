@@ -176,13 +176,13 @@ class Controller(Node):
             r = self.twist_linear_x / msg.angular.z
             # if the radius of curvature is zero then the angular z is inf which again means the robot is going straight forward or backward if r is not 0 then set robot's angular z velocity from the keyboard
             if r == 0:
-                self.twist_angular_z = 0
+                self.twist_angular_z = 0.0
             else:
                 self.twist_angular_z = msg.angular.z
 
             # setting the servo position and duration, the position is set at every 20 ms duartion which corresponds to 50 Hz which ensures that the servo movement is smooth
             servo_state = PWMServoState() # this message only contains id, position and offset
-            servo_state.id = [3] # servo is connected to third pwm pin
+            servo_state.id = 3 # servo is connected to third pwm pin
 
             # get the servo angle and motor speeds as [theta, MotorState], set speed function changes keyboard commands to servo theta and motor speeds
             servo_theta, motor_speed = self.ackermann.twist_to_wheel_cmd(self.twist_linear_x, self.twist_angular_z)
@@ -191,7 +191,7 @@ class Controller(Node):
             self.motor_pub.publish(motor_speed)
 
             if servo_theta is not None:
-                servo_state.position = [int(servo_theta)]
+                servo_state.position = int(servo_theta)
                 # set the servo_state message in Servo state duration message
                 servo_state_duration = PWMServoStateDuration()
                 servo_state_duration.state = [servo_state]
@@ -230,7 +230,7 @@ class Controller(Node):
             # set the odometry 
             self.odom.pose.pose.position.x = self.linear_correction_factor * self.pose_position_x
             self.odom.pose.pose.position.y = self.linear_correction_factor * self.pose_position_y
-            self.odom.pose.orientation = rpy2qua(0,0,self.pose_orientation_z)
+            self.odom.pose.pose.orientation = rpy2qua(0,0,self.pose_orientation_z)
             self.odom.twist.twist.linear.x = self.twist_linear_x
             self.odom.twist.twist.linear.y = self.twist_linear_y
             self.odom.twist.twist.angular.z = self.twist_angular_z
