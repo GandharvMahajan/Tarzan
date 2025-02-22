@@ -185,13 +185,13 @@ class Controller(Node):
             servo_state.id = 3 # servo is connected to third pwm pin
 
             # get the servo angle and motor speeds as [theta, MotorState], set speed function changes keyboard commands to servo theta and motor speeds
-            servo_theta, motor_speed = self.ackermann.twist_to_wheel_cmd(self.twist_linear_x, self.twist_angular_z)
+            servo_theta_and_motor_speed = self.ackermann.twist_to_wheel_cmd(self.twist_linear_x, self.twist_angular_z)
 
             # publish the motor speed
-            self.motor_pub.publish(motor_speed)
+            self.motor_pub.publish(servo_theta_and_motor_speed[1])
 
-            if servo_theta is not None:
-                servo_state.position = int(servo_theta)
+            if servo_theta_and_motor_speed[0] is not None:
+                servo_state.position = int(servo_theta_and_motor_speed[0])
                 # set the servo_state message in Servo state duration message
                 servo_state_duration = PWMServoStateDuration()
                 servo_state_duration.state = [servo_state]
@@ -201,8 +201,8 @@ class Controller(Node):
             else:
                 # Moving straigh, set only the motor speeds
                 self.twist_angular_z = 0.0
-                servo_theta, motor_speed = self.ackermann.set_speed(self.twist_linear_x, self.twist_angular_z)
-                self.motor_pub.publish(motor_speed)
+                servo_theta_and_motor_speed = self.ackermann.set_speed(self.twist_linear_x, self.twist_angular_z)
+                self.motor_pub.publish(servo_theta_and_motor_speed[1])
 
     # Function for publishing the position of the robot in odom frame 
     def calculate_odometry(self):
