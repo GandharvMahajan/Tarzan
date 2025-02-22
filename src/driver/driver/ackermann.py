@@ -38,8 +38,9 @@ class Ackermann:
                     data.append(motor_state) 
                 motors_state = MotorsState()
                 motors_state.data = data
+                print(f"1. The status is: {servo_angle} and {motors_state}")
                 return servo_angle, motors_state
-            
+
             else:
                 for i in range(4):
                     motor_state = MotorState()
@@ -48,4 +49,5 @@ class Ackermann:
                     data.append(motor_state)
                 motors_state = MotorsState()
                 motors_state.data = data
+                print(f"2. The status is: {motors_state}")
                 return None, motors_state
