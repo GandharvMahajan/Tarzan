@@ -187,6 +187,8 @@ class Controller(Node):
             # get the servo angle and motor speeds as [theta, MotorsState], set speed function changes keyboard commands to servo theta and motor speeds
             servo_theta_and_motor_speed = self.ackermann.twist_to_wheel_cmd(self.twist_linear_x, self.twist_angular_z)
 
+            self.get_logger().info(f"Servo: {servo_theta_and_motor_speed[0]}, Motor: {servo_theta_and_motor_speed[1]}")
+
             # publish the motor speed
             self.motor_pub.publish(servo_theta_and_motor_speed[1])
 
