@@ -56,3 +56,13 @@ class Ackermann:
                 motors_state.data = data
                 logger.debug(f"Computed values:  motor_speed={motors_state}")
                 return None, motors_state
+
+        else:
+            for i in range(4):
+                motor_state = MotorState()
+                motor_state.id = i + 1
+                motor_state.rps = 0.0
+                data.append(motor_state)
+            motors_state = MotorsState()
+            motors_state.data = data
+            return None, motors_state
