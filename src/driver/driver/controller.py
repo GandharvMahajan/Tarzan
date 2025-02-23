@@ -11,7 +11,7 @@ from driver import ackermann
 from nav_msgs.msg import Odometry
 from std_srvs.srv import Trigger
 import threading
-from msgs_srvs.msg import MotorState, PWMServoState, PWMServoStateDuration
+from msgs_srvs.msg import MotorsState, PWMServoState, PWMServoStateDuration
 from geometry_msgs.msg import Pose2D, Pose, Twist, PoseWithCovarianceStamped 
 import time
 import math
@@ -135,7 +135,7 @@ class Controller(Node):
             threading.Thread(target=self.calculate_odometry, daemon=True).start()
 
         # create a publisher for motors and servos
-        self.motor_pub = self.create_publisher(MotorState, '/control_manager/set_motor',1)
+        self.motor_pub = self.create_publisher(MotorsState, '/control_manager/set_motor',1)
         self.servo_state_pub = self.create_publisher(PWMServoStateDuration, '/control_manager/pwm_servo/set_state', 10)
 
         # Publish pose (position + orientation) with covariance
