@@ -205,12 +205,12 @@ class Controller(Node):
                 servo_state_duration.state = [servo_state]
                 servo_state_duration.duration = 0.02 # for smooth movement
                 self.servo_state_pub.publish(servo_state_duration)
-            
-            else:
-                # Moving straigh, set only the motor speeds
-                self.twist_angular_z = 0.0
-                servo_theta_and_motor_speed = self.ackermann.twist_to_wheel_cmd(self.twist_linear_x, self.twist_angular_z)
-                self.motor_pub.publish(servo_theta_and_motor_speed[1])
+        
+        else:
+            # Moving straigh, set only the motor speeds
+            self.twist_angular_z = 0.0
+            servo_theta_and_motor_speed = self.ackermann.twist_to_wheel_cmd(self.twist_linear_x, self.twist_angular_z)
+            self.motor_pub.publish(servo_theta_and_motor_speed[1])
 
     # Function for publishing the position of the robot in odom frame 
     def calculate_odometry(self):
