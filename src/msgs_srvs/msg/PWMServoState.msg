@@ -1,3 +1,3 @@
 uint8 id
-uint8 position
+uint16 position
 uint8 offset
