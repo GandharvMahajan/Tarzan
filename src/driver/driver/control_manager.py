@@ -113,9 +113,9 @@ class ControlManager(Node):
         for i in msg.state:
             # If a position is specified, set the PWM servo position.
             if i.id is not None and i.position is not None:
-                data.append([[i.id, i.position]])
+                data.append([i.id, i.position])
             # If an offset is specified, update the servo offset.
-            if i.id and i.offset:
+            if i.id is not None and i.offset is not None:
                 self.board.pwm_servo_set_offset(i.id, i.offset)
         if data:
             self.board.pwm_servo_set_position(msg.duration, data)
