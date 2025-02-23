@@ -6,6 +6,7 @@ import rclpy
 import threading
 from rclpy.node import Node
 import signal
+import logging
 from driver import ackermann
 from nav_msgs.msg import Odometry
 from std_srvs.srv import Trigger
@@ -67,6 +68,10 @@ class Controller(Node):
     def __init__(self, name):
         rclpy.init()
         super().__init__(name)
+        # Configure Python logging to match ROS 2 logging
+        logging.basicConfig(level=logging.DEBUG)
+        self.module_logger = logging.getLogger('ackermann')
+
         # pose.pose.position.z	0.0	No vertical movement
         # pose.pose.orientation.x	0.0	No roll
         # pose.pose.orientation.y	0.0	No pitch
@@ -203,7 +208,7 @@ class Controller(Node):
             else:
                 # Moving straigh, set only the motor speeds
                 self.twist_angular_z = 0.0
-                servo_theta_and_motor_speed = self.ackermann.set_speed(self.twist_linear_x, self.twist_angular_z)
+                servo_theta_and_motor_speed = self.ackermann.twist_to_wheel_cmd(self.twist_linear_x, self.twist_angular_z)
                 self.motor_pub.publish(servo_theta_and_motor_speed[1])
 
     # Function for publishing the position of the robot in odom frame 

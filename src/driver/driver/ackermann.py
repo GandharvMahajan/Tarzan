@@ -1,12 +1,13 @@
 '''
 This class converts the twist command from keyboard or joystick to motor speeds and servo angle
 '''
-
+import logging
 import math
 from msgs_srvs.msg import MotorsState, MotorState 
-import logging
+
 
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG) 
 
 class Ackermann:
     def __init__(self, wheelbase=0.145, track_width=0.133, wheel_diameter=0.067):
@@ -33,7 +34,7 @@ class Ackermann:
                 vr = twist_linear_x + twist_angular_z*self.track_width/2
                 vl = twist_linear_x - twist_angular_z*self.track_width/2
                 # combined motor speed, we set only 2nd and 4th place because our motors are connected to 2nd and 4th motor ports
-                v_s = [self.speed_covert(v) for v in [0, vl, 0, -vr]]
+                v_s = [self.speed_convert(v) for v in [0, vl, 0, -vr]]
                 for i in range(len(v_s)):
                     motor_state = MotorState()
                     motor_state.id = i + 1
@@ -41,7 +42,7 @@ class Ackermann:
                     data.append(motor_state) 
                 motors_state = MotorsState()
                 motors_state.data = data
-                logger.info(f"Computed values: servo_theta={servo_angle}, motor_speed={motors_state}")
+                logger.debug(f"Computed values: servo_theta={servo_angle}, motor_speed={motors_state}")
 
                 return servo_angle, motors_state
 
@@ -53,5 +54,5 @@ class Ackermann:
                     data.append(motor_state)
                 motors_state = MotorsState()
                 motors_state.data = data
-                logger.info(f"Computed values:  motor_speed={motors_state}")
+                logger.debug(f"Computed values:  motor_speed={motors_state}")
                 return None, motors_state
