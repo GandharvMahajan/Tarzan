@@ -185,7 +185,7 @@ class Controller(Node):
             else:
                 self.twist_angular_z = msg.angular.z
 
-            self.get_logger().info(f"twist linear x: {self.twist_linear_x}, twist angular z: {self.twist_angular_z}")
+            self.get_logger().info(f"1. twist linear x: {self.twist_linear_x}, twist angular z: {self.twist_angular_z}")
             # setting the servo position and duration, the position is set at every 20 ms duartion which corresponds to 50 Hz which ensures that the servo movement is smooth
             servo_state = PWMServoState() # this message only contains id, position and offset
             servo_state.id = 3 # servo is connected to third pwm pin
@@ -208,6 +208,7 @@ class Controller(Node):
         
         else:
             # Moving straigh, set only the motor speeds
+            self.get_logger().info(f"1. twist linear x: {self.twist_linear_x}, twist angular z: {self.twist_angular_z}")
             self.twist_angular_z = 0.0
             servo_theta_and_motor_speed = self.ackermann.twist_to_wheel_cmd(self.twist_linear_x, self.twist_angular_z)
             self.motor_pub.publish(servo_theta_and_motor_speed[1])

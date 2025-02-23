@@ -30,32 +30,22 @@ class Ackermann:
                     steering_angle = math.radians(29)
                 
                 servo_angle = 1500 + 2000*math.degrees(-steering_angle)/180
-                # calculate right and left wheel speed
-                vr = twist_linear_x + twist_angular_z*self.track_width/2
-                vl = twist_linear_x - twist_angular_z*self.track_width/2
-                # combined motor speed, we set only 2nd and 4th place because our motors are connected to 2nd and 4th motor ports
-                v_s = [self.speed_convert(v) for v in [0, vl, 0, -vr]]
-                for i in range(len(v_s)):
-                    motor_state = MotorState()
-                    motor_state.id = i + 1
-                    motor_state.rps = float(v_s[i])
-                    data.append(motor_state) 
-                motors_state = MotorsState()
-                motors_state.data = data
-                logger.debug(f"Computed values: servo_theta={servo_angle}, motor_speed={motors_state}")
 
-                return servo_angle, motors_state
+            # calculate right and left wheel speed
+            vr = twist_linear_x + twist_angular_z*self.track_width/2
+            vl = twist_linear_x - twist_angular_z*self.track_width/2
+            # combined motor speed, we set only 2nd and 4th place because our motors are connected to 2nd and 4th motor ports
+            v_s = [self.speed_convert(v) for v in [0, vl, 0, -vr]]
+            for i in range(len(v_s)):
+                motor_state = MotorState()
+                motor_state.id = i + 1
+                motor_state.rps = float(v_s[i])
+                data.append(motor_state) 
+            motors_state = MotorsState()
+            motors_state.data = data
+            logger.debug(f"Computed values: servo_theta={servo_angle}, motor_speed={motors_state}")
 
-            else:
-                for i in range(4):
-                    motor_state = MotorState()
-                    motor_state.id = i + 1
-                    motor_state.rps = 0.0
-                    data.append(motor_state)
-                motors_state = MotorsState()
-                motors_state.data = data
-                logger.debug(f"Computed values:  motor_speed={motors_state}")
-                return None, motors_state
+            return servo_angle, motors_state
 
         else:
             for i in range(4):
@@ -65,4 +55,5 @@ class Ackermann:
                 data.append(motor_state)
             motors_state = MotorsState()
             motors_state.data = data
+            logger.debug(f"Computed values:  motor_speed={motors_state}")
             return None, motors_state
