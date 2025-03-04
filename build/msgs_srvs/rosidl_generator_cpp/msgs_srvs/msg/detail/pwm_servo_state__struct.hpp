@@ -58,30 +58,30 @@ struct PWMServoState_
 
   // field types and members
   using _id_type =
-    uint8_t;
+    uint16_t;
   _id_type id;
   using _position_type =
-    uint8_t;
+    uint16_t;
   _position_type position;
   using _offset_type =
-    uint8_t;
+    uint16_t;
   _offset_type offset;
 
   // setters for named parameter idiom
   Type & set__id(
-    const uint8_t & _arg)
+    const uint16_t & _arg)
   {
     this->id = _arg;
     return *this;
   }
   Type & set__position(
-    const uint8_t & _arg)
+    const uint16_t & _arg)
   {
     this->position = _arg;
     return *this;
   }
   Type & set__offset(
-    const uint8_t & _arg)
+    const uint16_t & _arg)
   {
     this->offset = _arg;
     return *this;

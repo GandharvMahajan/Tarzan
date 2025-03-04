@@ -34,7 +34,7 @@ void msgs_srvs__msg__PWMServoState__rosidl_typesupport_introspection_c__PWMServo
 static rosidl_typesupport_introspection_c__MessageMember msgs_srvs__msg__PWMServoState__rosidl_typesupport_introspection_c__PWMServoState_message_member_array[3] = {
   {
     "id",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -51,7 +51,7 @@ static rosidl_typesupport_introspection_c__MessageMember msgs_srvs__msg__PWMServ
   },
   {
     "position",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -68,7 +68,7 @@ static rosidl_typesupport_introspection_c__MessageMember msgs_srvs__msg__PWMServ
   },
   {
     "offset",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

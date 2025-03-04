@@ -56,7 +56,7 @@ bool msgs_srvs__msg__pwm_servo_state__convert_from_py(PyObject * _pymsg, void * 
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->id = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->id = (uint16_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
   {  // position
@@ -65,7 +65,7 @@ bool msgs_srvs__msg__pwm_servo_state__convert_from_py(PyObject * _pymsg, void * 
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->position = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->position = (uint16_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
   {  // offset
@@ -74,7 +74,7 @@ bool msgs_srvs__msg__pwm_servo_state__convert_from_py(PyObject * _pymsg, void * 
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->offset = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->offset = (uint16_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
 

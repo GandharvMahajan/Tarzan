@@ -6,11 +6,11 @@
 module msgs_srvs {
   module msg {
     struct PWMServoState {
-      uint8 id;
+      uint16 id;
 
-      uint8 position;
+      uint16 position;
 
-      uint8 offset;
+      uint16 offset;
     };
   };
 };

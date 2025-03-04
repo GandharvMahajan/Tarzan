@@ -61,15 +61,15 @@ class PWMServoState(metaclass=Metaclass_PWMServoState):
     ]
 
     _fields_and_field_types = {
-        'id': 'uint8',
-        'position': 'uint8',
-        'offset': 'uint8',
+        'id': 'uint16',
+        'position': 'uint16',
+        'offset': 'uint16',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -133,8 +133,8 @@ class PWMServoState(metaclass=Metaclass_PWMServoState):
             assert \
                 isinstance(value, int), \
                 "The 'id' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'id' field must be an unsigned integer in [0, 255]"
+            assert value >= 0 and value < 65536, \
+                "The 'id' field must be an unsigned integer in [0, 65535]"
         self._id = value
 
     @builtins.property
@@ -148,8 +148,8 @@ class PWMServoState(metaclass=Metaclass_PWMServoState):
             assert \
                 isinstance(value, int), \
                 "The 'position' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'position' field must be an unsigned integer in [0, 255]"
+            assert value >= 0 and value < 65536, \
+                "The 'position' field must be an unsigned integer in [0, 65535]"
         self._position = value
 
     @builtins.property
@@ -163,6 +163,6 @@ class PWMServoState(metaclass=Metaclass_PWMServoState):
             assert \
                 isinstance(value, int), \
                 "The 'offset' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'offset' field must be an unsigned integer in [0, 255]"
+            assert value >= 0 and value < 65536, \
+                "The 'offset' field must be an unsigned integer in [0, 65535]"
         self._offset = value

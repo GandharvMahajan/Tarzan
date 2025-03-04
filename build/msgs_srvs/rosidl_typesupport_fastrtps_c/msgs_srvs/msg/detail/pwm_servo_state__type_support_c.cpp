@@ -159,22 +159,25 @@ size_t max_serialized_size_msgs_srvs__msg__PWMServoState(
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
   }
   // member: position
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
   }
   // member: offset
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;

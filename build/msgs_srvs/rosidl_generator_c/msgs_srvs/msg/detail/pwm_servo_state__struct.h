@@ -20,9 +20,9 @@ extern "C"
 /// Struct defined in msg/PWMServoState in the package msgs_srvs.
 typedef struct msgs_srvs__msg__PWMServoState
 {
-  uint8_t id;
-  uint8_t position;
-  uint8_t offset;
+  uint16_t id;
+  uint16_t position;
+  uint16_t offset;
 } msgs_srvs__msg__PWMServoState;
 
 // Struct for a sequence of msgs_srvs__msg__PWMServoState.

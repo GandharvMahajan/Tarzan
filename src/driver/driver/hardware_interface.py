@@ -441,7 +441,7 @@ def pwm_servo_test(board):
     center_position = 1500  # center position
 
     # Duration for the servo to reach each position (in seconds)
-    move_duration = 0.5
+    move_duration = 1.0
 
     print("Moving PWM servo to left extreme...")
     board.pwm_servo_set_position(move_duration, [[servo_id, left_position]])
@@ -463,7 +463,7 @@ if __name__ == "__main__":
     board.set_led(0.1, 0.9, repeat=1, led_id=1)
     board.set_buzzer(1900, 0.05, 0.01, repeat=1)
     
-    # pwm_servo_test(board)
+    pwm_servo_test(board)
 
 
 
