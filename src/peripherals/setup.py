@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'teleop_keyboard = peripherals.teleop_keyboard:main'
+            'teleop_keyboard = peripherals.teleop_keyboard:main_wrapper'
         ],
     },
 )

@@ -69,6 +69,13 @@ def main(stdscr):
         teleop_node.destroy_node()
         rclpy.shutdown()
 
+def main_wrapper():
+    """
+    This is what ROS 2 will actually call when you do 'ros2 run ... teleop_keyboard'.
+    It doesn't require arguments, so it won't raise the TypeError.
+    """
+    curses.wrapper(main)
+
 if __name__ == '__main__':
     # curses.wrapper initializes the curses environment and cleans up afterward.
-    curses.wrapper(main)
+    main_wrapper()
