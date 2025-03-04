@@ -1,0 +1,6 @@
+setup.py
+msgs_srvs/__init__.py
+msgs_srvs.egg-info/PKG-INFO
+msgs_srvs.egg-info/SOURCES.txt
+msgs_srvs.egg-info/dependency_links.txt
+msgs_srvs.egg-info/top_level.txt

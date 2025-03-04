@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from msgs_srvs/srv/PWMServoState.srv
+// generated code does not contain a copyright notice
+
+#include "msgs_srvs/msg/PWMServoState.idl"
+
+module msgs_srvs {
+  module srv {
+    struct PWMServoState_Request {
+      sequence<msgs_srvs::msg::PWMServoState> cmd;
+    };
+    struct PWMServoState_Response {
+      boolean success;
+
+      sequence<msgs_srvs::msg::PWMServoState> state;
+    };
+  };
+};
