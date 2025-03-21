@@ -24,6 +24,12 @@ class Ackermann:
         
         # Pure steering: servo turns but wheels remain stationary when no forward motion
         if abs(twist_linear_x) < 1e-8 and abs(twist_angular_z) > 1e-8:
+            # Compute servo angle even with zero linear velocity
+            steering_angle = math.atan(self.wheelbase * twist_angular_z / 1e-8)
+            if abs(steering_angle) > math.radians(29):
+                steering_angle = math.copysign(math.radians(29), steering_angle)
+            servo_angle = 1500 + 2000 * math.degrees(-steering_angle) / 180
+
             data = []
             for i in range(4):
                 motor_state = MotorState()
