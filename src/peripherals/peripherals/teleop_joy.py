@@ -60,10 +60,10 @@ class TeleopJoy(Node):
         if x_button_pressed and not self.last_x_pressed:
             # Publish a single beep whenever X transitions from not pressed to pressed
             buzzer_msg = BuzzerState()
-            buzzer_msg.freq = 1000     # Hz
-            buzzer_msg.on_time = 0.2   # seconds
-            buzzer_msg.off_time = 0.0  # seconds
-            buzzer_msg.repeat = 1
+            msg.freq = 2500
+            msg.on_time = 0.05
+            msg.off_time = 0.01
+            msg.repeat = 1
             self.buzzer_publisher.publish(buzzer_msg)
 
         # Update tracking
