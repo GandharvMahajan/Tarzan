@@ -1,5 +1,4 @@
-'''
-This class converts the twist command from keyboard or joystick to motor speeds and servo angle
+'''This class converts the twist command from keyboard or joystick to motor speeds and servo angle
 '''
 import logging
 import math
@@ -22,6 +21,20 @@ class Ackermann:
     def twist_to_wheel_cmd(self, twist_linear_x, twist_angular_z):
         servo_angle = 1500
         data = []
+        
+        # Pure steering: servo turns but wheels remain stationary when no forward motion
+        if abs(twist_linear_x) < 1e-8 and abs(twist_angular_z) > 1e-8:
+            data = []
+            for i in range(4):
+                motor_state = MotorState()
+                motor_state.id = i + 1
+                motor_state.rps = 0.0
+                data.append(motor_state)
+            motors_state = MotorsState()
+            motors_state.data = data
+            logger.debug(f"Pure steering: servo_theta={servo_angle}, motors off={motors_state}")
+            return servo_angle, motors_state
+
         # Always compute servo based on twist_angular_z (independent of linear velocity)
         if abs(twist_angular_z) > 1e-8:
             steering_angle = math.atan(
