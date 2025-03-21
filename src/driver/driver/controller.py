@@ -173,14 +173,8 @@ class Controller(Node):
         
         # if angular z velocity is not zero, which means if the robot is not going straight forward or backward, then we want to set the servo theta
         if msg.angular.z != 0:
-            # calculate the radius of curvature
-            r = self.twist_linear_x / msg.angular.z
-            # if the radius of curvature is zero then the angular z is inf which again means the robot is going straight forward or backward if r is not 0 then set robot's angular z velocity from the keyboard
-            if r == 0:
-                self.twist_angular_z = 0.0
-            else:
-                self.twist_angular_z = msg.angular.z
-
+            # Always allow servo movement based solely on angular command
+            self.twist_angular_z = msg.angular.z
             self.get_logger().info(f"1. twist linear x: {self.twist_linear_x}, twist angular z: {self.twist_angular_z}")
             # setting the servo position and duration, the position is set at every 20 ms duartion which corresponds to 50 Hz which ensures that the servo movement is smooth
             servo_state = PWMServoState() # this message only contains id, position and offset
