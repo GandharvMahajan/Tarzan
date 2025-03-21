@@ -22,38 +22,40 @@ class Ackermann:
     def twist_to_wheel_cmd(self, twist_linear_x, twist_angular_z):
         servo_angle = 1500
         data = []
-        if abs(twist_linear_x) >= 1e-8:
-            if abs(twist_angular_z) >= 1e-8:
-                steering_angle = math.atan(self.wheelbase*twist_angular_z/twist_linear_x)
-                # checking the max limits of the servo
-                if abs(steering_angle) > math.radians(29):
-                    steering_angle = math.radians(29)
-                
-                servo_angle = 1500 + 2000*math.degrees(-steering_angle)/180
+        # Always compute servo based on twist_angular_z (independent of linear velocity)
+        if abs(twist_angular_z) > 1e-8:
+            steering_angle = math.atan(
+                self.wheelbase * twist_angular_z / (twist_linear_x if abs(twist_linear_x) > 1e-8 else 1e-8)
+            )
+            if abs(steering_angle) > math.radians(29):
+                steering_angle = math.copysign(math.radians(29), steering_angle)
+            servo_angle = 1500 + 2000 * math.degrees(-steering_angle) / 180
 
-            # calculate right and left wheel speed
-            vr = twist_linear_x + twist_angular_z*self.track_width/2
-            vl = twist_linear_x - twist_angular_z*self.track_width/2
-            # combined motor speed, we set only 2nd and 4th place because our motors are connected to 2nd and 4th motor ports
+        # Calculate motor speeds if linear or angular velocity is non-trivial
+        if abs(twist_linear_x) > 1e-8 or abs(twist_angular_z) > 1e-8:
+            vr = twist_linear_x + twist_angular_z * (self.track_width / 2)
+            vl = twist_linear_x - twist_angular_z * (self.track_width / 2)
             v_s = [self.speed_convert(v) for v in [0, vl, 0, -vr]]
+
             for i in range(len(v_s)):
                 motor_state = MotorState()
                 motor_state.id = i + 1
                 motor_state.rps = float(v_s[i])
-                data.append(motor_state) 
+                data.append(motor_state)
+
             motors_state = MotorsState()
             motors_state.data = data
             logger.debug(f"Computed values: servo_theta={servo_angle}, motor_speed={motors_state}")
-
             return servo_angle, motors_state
-
         else:
+            # No movement in linear or angular velocity => motors off, servo can still move
             for i in range(4):
                 motor_state = MotorState()
                 motor_state.id = i + 1
                 motor_state.rps = 0.0
                 data.append(motor_state)
+
             motors_state = MotorsState()
             motors_state.data = data
-            logger.debug(f"Computed values:  motor_speed={motors_state}")
-            return None, motors_state
+            logger.debug(f"Computed values: servo_theta={servo_angle}, motor_speed={motors_state}")
+            return servo_angle, motors_state

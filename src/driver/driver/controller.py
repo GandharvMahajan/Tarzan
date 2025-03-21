@@ -1,7 +1,3 @@
-'''
-Controller class takes in the twist commands from the user keyboard or joystick and sets the motor speeds and servo theta of the robot. it also publishes the odom_raw topic which tells the robot position in the odom frame.
-This controller doesn't use any sensor not even IMU to calculate position of the robot. It calculates position by integrating the command velocity (/cmd_vel topic) from the keyboard or joystick
-'''
 import rclpy
 import threading
 from rclpy.node import Node
@@ -261,9 +257,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-            
