@@ -25,7 +25,7 @@ class TeleopJoy(Node):
         )
 
         # Publisher for buzzer
-        self.buzzer_publisher = self.create_publisher(BuzzerState, '/set_buzzer', 10)
+        self.buzzer_publisher = self.create_publisher(BuzzerState, '/control_manager/set_buzzer', 10)
 
         # Track whether the X button was pressed previously (to avoid spamming buzzer)
         self.last_x_pressed = False
