@@ -3,6 +3,7 @@ import curses
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
+import time
 
 class KeyboardTeleop(Node):
     def __init__(self, stdscr):

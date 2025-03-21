@@ -1,0 +1,17 @@
+[2.145s] Invoking command in '/ros2_ws/src/build/peripherals': PYTHONPATH=/ros2_ws/src/build/peripherals/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/src/install/peripherals/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /ros2_ws/src/build/peripherals/build --no-deps symlink_data
+[2.558s] running develop
+[2.770s] running egg_info
+[2.771s] writing peripherals.egg-info/PKG-INFO
+[2.771s] writing dependency_links to peripherals.egg-info/dependency_links.txt
+[2.777s] writing entry points to peripherals.egg-info/entry_points.txt
+[2.778s] writing requirements to peripherals.egg-info/requires.txt
+[2.778s] writing top-level names to peripherals.egg-info/top_level.txt
+[2.783s] reading manifest file 'peripherals.egg-info/SOURCES.txt'
+[2.784s] writing manifest file 'peripherals.egg-info/SOURCES.txt'
+[2.787s] running build_ext
+[2.787s] Creating /ros2_ws/src/install/peripherals/lib/python3.10/site-packages/peripherals.egg-link (link to .)
+[2.789s] Installing teleop_keyboard script to /ros2_ws/src/install/peripherals/lib/peripherals
+[2.789s] 
+[2.790s] Installed /ros2_ws/src/build/peripherals
+[2.790s] running symlink_data
+[2.897s] Invoked command in '/ros2_ws/src/build/peripherals' returned '0': PYTHONPATH=/ros2_ws/src/build/peripherals/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/src/install/peripherals/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /ros2_ws/src/build/peripherals/build --no-deps symlink_data

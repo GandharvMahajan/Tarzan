@@ -98,7 +98,7 @@ class Board:
         'GAMEPAD_BUTTON_MASK_R1': 0x8000
     }
 
-    def __init__(self, device="/dev/ttyACM0", baudrate=1000000, timeout=10):
+    def __init__(self, device="/dev/board", baudrate=1000000, timeout=10):
         self.enable_recv = False
         self.frame = []
         self.recv_count = 0
@@ -463,7 +463,7 @@ if __name__ == "__main__":
     board.set_led(0.1, 0.9, repeat=1, led_id=1)
     board.set_buzzer(1900, 0.05, 0.01, repeat=1)
     
-    # pwm_servo_test(board)
+    pwm_servo_test(board)
 
 
 

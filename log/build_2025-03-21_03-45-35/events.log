@@ -1,0 +1,400 @@
+[0.000000] (-) TimerEvent: {}
+[0.000372] (driver) JobQueued: {'identifier': 'driver', 'dependencies': OrderedDict()}
+[0.000414] (msgs_srvs) JobQueued: {'identifier': 'msgs_srvs', 'dependencies': OrderedDict()}
+[0.000437] (oradar_lidar) JobQueued: {'identifier': 'oradar_lidar', 'dependencies': OrderedDict()}
+[0.000457] (peripherals) JobQueued: {'identifier': 'peripherals', 'dependencies': OrderedDict()}
+[0.000808] (driver) JobStarted: {'identifier': 'driver'}
+[0.016465] (msgs_srvs) JobStarted: {'identifier': 'msgs_srvs'}
+[0.021617] (oradar_lidar) JobStarted: {'identifier': 'oradar_lidar'}
+[0.026458] (peripherals) JobStarted: {'identifier': 'peripherals'}
+[0.099906] (-) TimerEvent: {}
+[0.201386] (-) TimerEvent: {}
+[0.301737] (-) TimerEvent: {}
+[0.402090] (-) TimerEvent: {}
+[0.481532] (msgs_srvs) JobProgress: {'identifier': 'msgs_srvs', 'progress': 'cmake'}
+[0.483529] (msgs_srvs) JobProgress: {'identifier': 'msgs_srvs', 'progress': 'build'}
+[0.484543] (msgs_srvs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2_ws/build/msgs_srvs', '--', '-j4', '-l4'], 'cwd': '/ros2_ws/build/msgs_srvs', 'env': OrderedDict([('VNCDESKTOP', 'TurboVNC: tarzan-desktop:1 ()'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tarzan-desktop'), ('SSH_AGENT_PID', '183'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('DESKTOP_SESSION', 'xfce'), ('PANEL_GDK_CORE_DEVICE_EVENTS', '0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-9biGeJOWe4,guid=18492952bae68cebc24162b767dcd686'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('VGL_PROBEGLX', '0'), ('WINDOWID', '41961961'), ('FONT_ENCODINGS_DIRECTORY', '/usr/share/fonts/X11/encodings'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('SESSION_MANAGER', 'local/tarzan-desktop:@/tmp/.ICE-unix/133,unix/tarzan-desktop:/tmp/.ICE-unix/133'), ('XDG_MENU_PREFIX', 'xfce-'), ('VGL_COMPRESS', '0'), ('DISPLAY', ':1.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXX3Bjia3/agent.182'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ros2_ws/build/msgs_srvs'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.489375] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'cmake'}
+[0.491808] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'build'}
+[0.493274] (oradar_lidar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2_ws/build/oradar_lidar', '--', '-j4', '-l4'], 'cwd': '/ros2_ws/build/oradar_lidar', 'env': OrderedDict([('VNCDESKTOP', 'TurboVNC: tarzan-desktop:1 ()'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tarzan-desktop'), ('SSH_AGENT_PID', '183'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('DESKTOP_SESSION', 'xfce'), ('PANEL_GDK_CORE_DEVICE_EVENTS', '0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-9biGeJOWe4,guid=18492952bae68cebc24162b767dcd686'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('VGL_PROBEGLX', '0'), ('WINDOWID', '41961961'), ('FONT_ENCODINGS_DIRECTORY', '/usr/share/fonts/X11/encodings'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('SESSION_MANAGER', 'local/tarzan-desktop:@/tmp/.ICE-unix/133,unix/tarzan-desktop:/tmp/.ICE-unix/133'), ('XDG_MENU_PREFIX', 'xfce-'), ('VGL_COMPRESS', '0'), ('DISPLAY', ':1.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXX3Bjia3/agent.182'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ros2_ws/build/oradar_lidar'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.503004] (-) TimerEvent: {}
+[0.603747] (-) TimerEvent: {}
+[0.621058] (msgs_srvs) StdoutLine: {'line': b'[ 11%] Built target msgs_srvs__rosidl_generator_c\n'}
+[0.629289] (msgs_srvs) StdoutLine: {'line': b'[ 12%] Built target msgs_srvs__cpp\n'}
+[0.640889] (msgs_srvs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_symlink_msgs_srvs\n'}
+[0.661418] (oradar_lidar) StdoutLine: {'line': b'[ 60%] Built target oradar_sdk\n'}
+[0.705074] (-) TimerEvent: {}
+[0.745962] (msgs_srvs) StdoutLine: {'line': b'[ 24%] Built target msgs_srvs__rosidl_typesupport_fastrtps_c\n'}
+[0.752869] (msgs_srvs) StdoutLine: {'line': b'[ 35%] Built target msgs_srvs__rosidl_typesupport_c\n'}
+[0.777330] (msgs_srvs) StdoutLine: {'line': b'[ 47%] Built target msgs_srvs__rosidl_typesupport_introspection_c\n'}
+[0.788176] (oradar_lidar) StdoutLine: {'line': b'[ 70%] Built target blocking_test\n'}
+[0.788607] (oradar_lidar) StdoutLine: {'line': b'[ 80%] Built target non-blocking_test\n'}
+[0.801574] (oradar_lidar) StdoutLine: {'line': b'[ 90%] Built target blocking_c_api_test\n'}
+[0.803721] (msgs_srvs) StdoutLine: {'line': b'[ 58%] Built target msgs_srvs__rosidl_typesupport_introspection_cpp\n'}
+[0.805189] (-) TimerEvent: {}
+[0.826201] (oradar_lidar) StdoutLine: {'line': b'[100%] Built target oradar_scan\n'}
+[0.866402] (msgs_srvs) StdoutLine: {'line': b'[ 70%] Built target msgs_srvs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.872828] (msgs_srvs) StdoutLine: {'line': b'[ 82%] Built target msgs_srvs__rosidl_typesupport_cpp\n'}
+[0.905322] (-) TimerEvent: {}
+[0.913165] (msgs_srvs) StdoutLine: {'line': b'[ 82%] Built target msgs_srvs\n'}
+[0.969902] (msgs_srvs) StdoutLine: {'line': b'[ 83%] Built target msgs_srvs__py\n'}
+[1.005450] (-) TimerEvent: {}
+[1.014904] (msgs_srvs) StdoutLine: {'line': b'[ 93%] Built target msgs_srvs__rosidl_generator_py\n'}
+[1.084062] (msgs_srvs) StdoutLine: {'line': b'[ 95%] Built target msgs_srvs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.092111] (msgs_srvs) StdoutLine: {'line': b'[ 97%] Built target msgs_srvs__rosidl_typesupport_c__pyext\n'}
+[1.105580] (-) TimerEvent: {}
+[1.107716] (msgs_srvs) StdoutLine: {'line': b'[100%] Built target msgs_srvs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.181296] (oradar_lidar) CommandEnded: {'returncode': 0}
+[1.182095] (oradar_lidar) JobProgress: {'identifier': 'oradar_lidar', 'progress': 'install'}
+[1.199759] (oradar_lidar) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros2_ws/build/oradar_lidar'], 'cwd': '/ros2_ws/build/oradar_lidar', 'env': OrderedDict([('VNCDESKTOP', 'TurboVNC: tarzan-desktop:1 ()'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tarzan-desktop'), ('SSH_AGENT_PID', '183'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('DESKTOP_SESSION', 'xfce'), ('PANEL_GDK_CORE_DEVICE_EVENTS', '0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-9biGeJOWe4,guid=18492952bae68cebc24162b767dcd686'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('VGL_PROBEGLX', '0'), ('WINDOWID', '41961961'), ('FONT_ENCODINGS_DIRECTORY', '/usr/share/fonts/X11/encodings'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('SESSION_MANAGER', 'local/tarzan-desktop:@/tmp/.ICE-unix/133,unix/tarzan-desktop:/tmp/.ICE-unix/133'), ('XDG_MENU_PREFIX', 'xfce-'), ('VGL_COMPRESS', '0'), ('DISPLAY', ':1.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXX3Bjia3/agent.182'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ros2_ws/build/oradar_lidar'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.205719] (-) TimerEvent: {}
+[1.215698] (oradar_lidar) StdoutLine: {'line': b'-- Install configuration: "RELEASE"\n'}
+[1.216290] (oradar_lidar) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.216836] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/bin/blocking_test\n'}
+[1.217730] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/bin/non-blocking_test\n'}
+[1.217948] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/bin/blocking_c_api_test\n'}
+[1.220179] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/datatype.h\n'}
+[1.220298] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/locker.h\n'}
+[1.220377] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/thread.h\n'}
+[1.220449] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/timer.h\n'}
+[1.220517] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/typedef.h\n'}
+[1.220584] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/utils.h\n'}
+[1.220650] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/base/v8stdint.h\n'}
+[1.220715] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/common/ChannelDevice.h\n'}
+[1.220794] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/math/angles.h\n'}
+[1.220877] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/ActiveSocket.h\n'}
+[1.221039] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/PassiveSocket.h\n'}
+[1.221138] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/SimpleSocket.h\n'}
+[1.221246] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/network/StatTimer.h\n'}
+[1.221338] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/common.h\n'}
+[1.221417] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/serial.h\n'}
+[1.221545] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/lock.h\n'}
+[1.221638] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/unix.h\n'}
+[1.221822] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/core/serial/impl/unix/unix_serial.h\n'}
+[1.222080] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/ord_lidar_c_api_driver.h\n'}
+[1.222303] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/ord_lidar_driver.h\n'}
+[1.222543] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/ordlidar_protocol.h\n'}
+[1.222783] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/include/src/filters/FullScanFilter.h\n'}
+[1.222999] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/lib/liboradar_sdk.a\n'}
+[1.225893] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/lib/oradar_lidar/oradar_scan\n'}
+[1.226365] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch\n'}
+[1.226502] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan.launch.py\n'}
+[1.226593] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch\n'}
+[1.226671] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//launch/ms200_scan_view.launch.py\n'}
+[1.226745] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar//rviz2/oradar_scan.rviz\n'}
+[1.226851] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/package_run_dependencies/oradar_lidar\n'}
+[1.226933] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/parent_prefix_path/oradar_lidar\n'}
+[1.226999] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.sh\n'}
+[1.227094] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/ament_prefix_path.dsv\n'}
+[1.227177] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/path.sh\n'}
+[1.227348] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/environment/path.dsv\n'}
+[1.227467] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.bash\n'}
+[1.227597] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.sh\n'}
+[1.227667] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.zsh\n'}
+[1.227746] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/local_setup.dsv\n'}
+[1.227860] (oradar_lidar) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/oradar_lidar/share/oradar_lidar/package.dsv\n'}
+[1.266053] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/ament_index/resource_index/packages/oradar_lidar\n'}
+[1.266703] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig.cmake\n'}
+[1.266904] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/cmake/oradar_lidarConfig-version.cmake\n'}
+[1.266998] (oradar_lidar) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/oradar_lidar/share/oradar_lidar/package.xml\n'}
+[1.280157] (oradar_lidar) CommandEnded: {'returncode': 0}
+[1.298535] (msgs_srvs) StdoutLine: {'line': b'running egg_info\n'}
+[1.300245] (msgs_srvs) StdoutLine: {'line': b'writing msgs_srvs.egg-info/PKG-INFO\n'}
+[1.303079] (msgs_srvs) StdoutLine: {'line': b'writing dependency_links to msgs_srvs.egg-info/dependency_links.txt\n'}
+[1.303453] (msgs_srvs) StdoutLine: {'line': b'writing top-level names to msgs_srvs.egg-info/top_level.txt\n'}
+[1.306221] (-) TimerEvent: {}
+[1.309960] (msgs_srvs) StdoutLine: {'line': b"reading manifest file 'msgs_srvs.egg-info/SOURCES.txt'\n"}
+[1.310467] (msgs_srvs) StdoutLine: {'line': b"writing manifest file 'msgs_srvs.egg-info/SOURCES.txt'\n"}
+[1.370373] (oradar_lidar) JobEnded: {'identifier': 'oradar_lidar', 'rc': 0}
+[1.408411] (-) TimerEvent: {}
+[1.433331] (msgs_srvs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_msgs_srvs_egg\n'}
+[1.491328] (msgs_srvs) CommandEnded: {'returncode': 0}
+[1.492875] (msgs_srvs) JobProgress: {'identifier': 'msgs_srvs', 'progress': 'install'}
+[1.492943] (msgs_srvs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros2_ws/build/msgs_srvs'], 'cwd': '/ros2_ws/build/msgs_srvs', 'env': OrderedDict([('VNCDESKTOP', 'TurboVNC: tarzan-desktop:1 ()'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tarzan-desktop'), ('SSH_AGENT_PID', '183'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('DESKTOP_SESSION', 'xfce'), ('PANEL_GDK_CORE_DEVICE_EVENTS', '0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-9biGeJOWe4,guid=18492952bae68cebc24162b767dcd686'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('VGL_PROBEGLX', '0'), ('WINDOWID', '41961961'), ('FONT_ENCODINGS_DIRECTORY', '/usr/share/fonts/X11/encodings'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('SESSION_MANAGER', 'local/tarzan-desktop:@/tmp/.ICE-unix/133,unix/tarzan-desktop:/tmp/.ICE-unix/133'), ('XDG_MENU_PREFIX', 'xfce-'), ('VGL_COMPRESS', '0'), ('DISPLAY', ':1.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXX3Bjia3/agent.182'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ros2_ws/build/msgs_srvs'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.506915] (msgs_srvs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.508277] (msgs_srvs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.508481] (-) TimerEvent: {}
+[1.509305] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/ament_index/resource_index/rosidl_interfaces/msgs_srvs\n'}
+[1.510742] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/button_state.h\n'}
+[1.511285] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/buzzer_state.h\n'}
+[1.511723] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/button_state__functions.h\n'}
+[1.512363] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/button_state__struct.h\n'}
+[1.512485] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/button_state__type_support.h\n'}
+[1.513014] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/buzzer_state__functions.h\n'}
+[1.513179] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/buzzer_state__struct.h\n'}
+[1.513653] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/buzzer_state__type_support.h\n'}
+[1.513996] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/led_state__functions.h\n'}
+[1.514373] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/led_state__struct.h\n'}
+[1.514471] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/led_state__type_support.h\n'}
+[1.514789] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motor_state__functions.h\n'}
+[1.515266] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motor_state__struct.h\n'}
+[1.515628] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motor_state__type_support.h\n'}
+[1.515985] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motors_state__functions.h\n'}
+[1.516069] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motors_state__struct.h\n'}
+[1.516694] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motors_state__type_support.h\n'}
+[1.516844] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state__functions.h\n'}
+[1.516945] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state__struct.h\n'}
+[1.517249] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state__type_support.h\n'}
+[1.517627] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state_duration__functions.h\n'}
+[1.517941] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state_duration__struct.h\n'}
+[1.518279] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state_duration__type_support.h\n'}
+[1.518554] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/sbus__functions.h\n'}
+[1.518806] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/sbus__struct.h\n'}
+[1.518916] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/sbus__type_support.h\n'}
+[1.518984] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/led_state.h\n'}
+[1.519045] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/motor_state.h\n'}
+[1.519105] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/motors_state.h\n'}
+[1.519699] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/pwm_servo_state.h\n'}
+[1.520837] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/pwm_servo_state_duration.h\n'}
+[1.521005] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.521090] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/sbus.h\n'}
+[1.521172] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/srv/detail/pwm_servo_state__functions.h\n'}
+[1.521247] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/srv/detail/pwm_servo_state__struct.h\n'}
+[1.521321] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/srv/detail/pwm_servo_state__type_support.h\n'}
+[1.521396] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/srv/pwm_servo_state.h\n'}
+[1.521465] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/environment/library_path.sh\n'}
+[1.521739] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/environment/library_path.dsv\n'}
+[1.522074] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/button_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.522160] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/buzzer_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.522224] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/led_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.522284] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motor_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.522342] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motors_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.522398] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.522455] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state_duration__rosidl_typesupport_fastrtps_c.h\n'}
+[1.522513] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/sbus__rosidl_typesupport_fastrtps_c.h\n'}
+[1.522587] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.522663] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/srv/detail/pwm_servo_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.522908] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/button_state.hpp\n'}
+[1.523089] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/buzzer_state.hpp\n'}
+[1.523225] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/button_state__builder.hpp\n'}
+[1.523357] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/button_state__struct.hpp\n'}
+[1.523487] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/button_state__traits.hpp\n'}
+[1.523632] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/button_state__type_support.hpp\n'}
+[1.523782] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/buzzer_state__builder.hpp\n'}
+[1.523947] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/buzzer_state__struct.hpp\n'}
+[1.524083] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/buzzer_state__traits.hpp\n'}
+[1.524236] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/buzzer_state__type_support.hpp\n'}
+[1.524366] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/led_state__builder.hpp\n'}
+[1.524510] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/led_state__struct.hpp\n'}
+[1.524649] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/led_state__traits.hpp\n'}
+[1.524795] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/led_state__type_support.hpp\n'}
+[1.524948] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motor_state__builder.hpp\n'}
+[1.525111] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motor_state__struct.hpp\n'}
+[1.525263] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motor_state__traits.hpp\n'}
+[1.525411] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motor_state__type_support.hpp\n'}
+[1.525557] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motors_state__builder.hpp\n'}
+[1.525695] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motors_state__struct.hpp\n'}
+[1.525842] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motors_state__traits.hpp\n'}
+[1.525983] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motors_state__type_support.hpp\n'}
+[1.526122] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state__builder.hpp\n'}
+[1.526274] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state__struct.hpp\n'}
+[1.526411] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state__traits.hpp\n'}
+[1.526548] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state__type_support.hpp\n'}
+[1.526685] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state_duration__builder.hpp\n'}
+[1.526837] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state_duration__struct.hpp\n'}
+[1.526982] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state_duration__traits.hpp\n'}
+[1.527128] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state_duration__type_support.hpp\n'}
+[1.527269] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/sbus__builder.hpp\n'}
+[1.527401] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/sbus__struct.hpp\n'}
+[1.527537] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/sbus__traits.hpp\n'}
+[1.527678] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/sbus__type_support.hpp\n'}
+[1.527832] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/led_state.hpp\n'}
+[1.527971] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/motor_state.hpp\n'}
+[1.528102] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/motors_state.hpp\n'}
+[1.528233] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/pwm_servo_state.hpp\n'}
+[1.528363] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/pwm_servo_state_duration.hpp\n'}
+[1.528517] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[1.528652] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/sbus.hpp\n'}
+[1.528801] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/srv/detail/pwm_servo_state__builder.hpp\n'}
+[1.528951] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/srv/detail/pwm_servo_state__struct.hpp\n'}
+[1.529081] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/srv/detail/pwm_servo_state__traits.hpp\n'}
+[1.529212] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/srv/detail/pwm_servo_state__type_support.hpp\n'}
+[1.529343] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/srv/pwm_servo_state.hpp\n'}
+[1.530338] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/button_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.530518] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/buzzer_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.530645] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/led_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.530777] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motor_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.530892] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motors_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.531024] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.531155] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state_duration__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.531284] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/sbus__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.531403] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.531529] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/srv/detail/pwm_servo_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.532118] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/button_state__rosidl_typesupport_introspection_c.h\n'}
+[1.532251] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/buzzer_state__rosidl_typesupport_introspection_c.h\n'}
+[1.532378] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/led_state__rosidl_typesupport_introspection_c.h\n'}
+[1.532505] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motor_state__rosidl_typesupport_introspection_c.h\n'}
+[1.533291] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motors_state__rosidl_typesupport_introspection_c.h\n'}
+[1.533448] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state__rosidl_typesupport_introspection_c.h\n'}
+[1.533586] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state_duration__rosidl_typesupport_introspection_c.h\n'}
+[1.533717] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/sbus__rosidl_typesupport_introspection_c.h\n'}
+[1.533873] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.534032] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/srv/detail/pwm_servo_state__rosidl_typesupport_introspection_c.h\n'}
+[1.535172] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/button_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.535330] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/buzzer_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.535448] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/led_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.535601] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motor_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.535879] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/motors_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.536210] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.536413] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/pwm_servo_state_duration__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.536593] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/msg/detail/sbus__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.536761] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/include/msgs_srvs/msgs_srvs/srv/detail/pwm_servo_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.537681] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/environment/pythonpath.sh\n'}
+[1.541153] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/environment/pythonpath.dsv\n'}
+[1.541455] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[1.541537] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[1.541604] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[1.541672] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[1.542067] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/__init__.py\n'}
+[1.542269] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/_msgs_srvs_s.ep.rosidl_typesupport_c.c\n'}
+[1.542418] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/_msgs_srvs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[1.542567] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/_msgs_srvs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[1.542736] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/libmsgs_srvs__rosidl_generator_py.so\n'}
+[1.542973] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/__init__.py\n'}
+[1.543151] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_button_state.py\n'}
+[1.543313] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_button_state_s.c\n'}
+[1.543462] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_buzzer_state.py\n'}
+[1.543812] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_buzzer_state_s.c\n'}
+[1.544080] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_led_state.py\n'}
+[1.544248] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_led_state_s.c\n'}
+[1.544885] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_motor_state.py\n'}
+[1.545320] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_motor_state_s.c\n'}
+[1.546299] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_motors_state.py\n'}
+[1.549063] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_motors_state_s.c\n'}
+[1.551373] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_pwm_servo_state.py\n'}
+[1.553613] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_pwm_servo_state_duration.py\n'}
+[1.555866] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_pwm_servo_state_duration_s.c\n'}
+[1.557965] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_pwm_servo_state_s.c\n'}
+[1.558278] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_sbus.py\n'}
+[1.558467] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg/_sbus_s.c\n'}
+[1.558601] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msgs_srvs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.558683] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msgs_srvs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.558797] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msgs_srvs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.558903] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/srv/__init__.py\n'}
+[1.558996] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/srv/_pwm_servo_state.py\n'}
+[1.559110] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/srv/_pwm_servo_state_s.c\n'}
+[1.559247] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msgs_srvs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.559320] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msgs_srvs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.559447] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msgs_srvs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.559533] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/ButtonState.idl\n'}
+[1.559636] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/BuzzerState.idl\n'}
+[1.559724] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/LedState.idl\n'}
+[1.559863] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/MotorsState.idl\n'}
+[1.559993] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/MotorState.idl\n'}
+[1.560065] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/PWMServoState.idl\n'}
+[1.560184] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/PWMServoStateDuration.idl\n'}
+[1.560268] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/Sbus.idl\n'}
+[1.560366] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/srv/PWMServoState.idl\n'}
+[1.560446] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/ButtonState.msg\n'}
+[1.560548] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/BuzzerState.msg\n'}
+[1.560632] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/LedState.msg\n'}
+[1.560736] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/MotorsState.msg\n'}
+[1.560879] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/MotorState.msg\n'}
+[1.560965] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/PWMServoState.msg\n'}
+[1.561104] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/PWMServoStateDuration.msg\n'}
+[1.561182] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/msg/Sbus.msg\n'}
+[1.561302] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/srv/PWMServoState.srv\n'}
+[1.561372] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/srv/PWMServoState_Request.msg\n'}
+[1.561483] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/srv/PWMServoState_Response.msg\n'}
+[1.561559] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/ament_index/resource_index/package_run_dependencies/msgs_srvs\n'}
+[1.561687] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/ament_index/resource_index/parent_prefix_path/msgs_srvs\n'}
+[1.561900] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/environment/ament_prefix_path.sh\n'}
+[1.562098] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/environment/ament_prefix_path.dsv\n'}
+[1.562298] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/environment/path.sh\n'}
+[1.562479] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/environment/path.dsv\n'}
+[1.562667] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/local_setup.bash\n'}
+[1.562874] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/local_setup.sh\n'}
+[1.563066] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/local_setup.zsh\n'}
+[1.563257] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/local_setup.dsv\n'}
+[1.563403] (msgs_srvs) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/msgs_srvs/share/msgs_srvs/package.dsv\n'}
+[1.580143] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/ament_index/resource_index/packages/msgs_srvs\n'}
+[1.580455] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/rosidl_cmake-extras.cmake\n'}
+[1.580573] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.580700] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.580975] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.581123] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.581240] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.581387] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.581568] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/msgs_srvsConfig.cmake\n'}
+[1.581696] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/msgs_srvsConfig-version.cmake\n'}
+[1.581912] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/msgs_srvs/share/msgs_srvs/package.xml\n'}
+[1.582276] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/lib/libmsgs_srvs__rosidl_generator_c.so\n'}
+[1.583349] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/lib/libmsgs_srvs__rosidl_typesupport_fastrtps_c.so\n'}
+[1.583879] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/lib/libmsgs_srvs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.584212] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/lib/libmsgs_srvs__rosidl_typesupport_introspection_c.so\n'}
+[1.584573] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/lib/libmsgs_srvs__rosidl_typesupport_c.so\n'}
+[1.584980] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/lib/libmsgs_srvs__rosidl_typesupport_introspection_cpp.so\n'}
+[1.585371] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/lib/libmsgs_srvs__rosidl_typesupport_cpp.so\n'}
+[1.609885] (-) TimerEvent: {}
+[1.634245] (msgs_srvs) StdoutLine: {'line': b"Listing '/ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs'...\n"}
+[1.634644] (msgs_srvs) StdoutLine: {'line': b"Listing '/ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/msg'...\n"}
+[1.634871] (msgs_srvs) StdoutLine: {'line': b"Listing '/ros2_ws/install/msgs_srvs/local/lib/python3.10/dist-packages/msgs_srvs/srv'...\n"}
+[1.664815] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/lib/libmsgs_srvs__rosidl_generator_py.so\n'}
+[1.665304] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/export_msgs_srvs__rosidl_generator_cExport.cmake\n'}
+[1.665447] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/export_msgs_srvs__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.666100] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/export_msgs_srvs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[1.666240] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/export_msgs_srvs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[1.666309] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/export_msgs_srvs__rosidl_generator_cppExport.cmake\n'}
+[1.669902] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/export_msgs_srvs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[1.670241] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/export_msgs_srvs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[1.670372] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/msgs_srvs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.670485] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/msgs_srvs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.670583] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/msgs_srvs__rosidl_typesupport_cExport.cmake\n'}
+[1.670667] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/msgs_srvs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.670746] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/msgs_srvs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.671169] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/msgs_srvs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.671561] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/msgs_srvs__rosidl_typesupport_cppExport.cmake\n'}
+[1.671676] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/msgs_srvs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.671751] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/export_msgs_srvs__rosidl_generator_pyExport.cmake\n'}
+[1.672157] (msgs_srvs) StdoutLine: {'line': b'-- Up-to-date: /ros2_ws/install/msgs_srvs/share/msgs_srvs/cmake/export_msgs_srvs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[1.672741] (msgs_srvs) CommandEnded: {'returncode': 0}
+[1.710402] (-) TimerEvent: {}
+[1.718457] (msgs_srvs) JobEnded: {'identifier': 'msgs_srvs', 'rc': 0}
+[1.810546] (-) TimerEvent: {}
+[1.911108] (-) TimerEvent: {}
+[1.935546] (driver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/ros2_ws/build/driver/build', '--no-deps', 'symlink_data'], 'cwd': '/ros2_ws/build/driver', 'env': {'VNCDESKTOP': 'TurboVNC: tarzan-desktop:1 ()', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'HOSTNAME': 'tarzan-desktop', 'SSH_AGENT_PID': '183', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'DESKTOP_SESSION': 'xfce', 'PANEL_GDK_CORE_DEVICE_EVENTS': '0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-9biGeJOWe4,guid=18492952bae68cebc24162b767dcd686', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'VGL_PROBEGLX': '0', 'WINDOWID': '41961961', 'FONT_ENCODINGS_DIRECTORY': '/usr/share/fonts/X11/encodings', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SESSION_MANAGER': 'local/tarzan-desktop:@/tmp/.ICE-unix/133,unix/tarzan-desktop:/tmp/.ICE-unix/133', 'XDG_MENU_PREFIX': 'xfce-', 'VGL_COMPRESS': '0', 'DISPLAY': ':1.0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'XFCE', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/tmp/ssh-XXXXXX3Bjia3/agent.182', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/ros2_ws/build/driver', 'XDG_CONFIG_DIRS': '/etc/xdg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share', 'PYTHONPATH': '/ros2_ws/build/driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/driver/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.985494] (peripherals) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/ros2_ws/build/peripherals/build', '--no-deps', 'symlink_data'], 'cwd': '/ros2_ws/build/peripherals', 'env': {'VNCDESKTOP': 'TurboVNC: tarzan-desktop:1 ()', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'HOSTNAME': 'tarzan-desktop', 'SSH_AGENT_PID': '183', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'DESKTOP_SESSION': 'xfce', 'PANEL_GDK_CORE_DEVICE_EVENTS': '0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-9biGeJOWe4,guid=18492952bae68cebc24162b767dcd686', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'VGL_PROBEGLX': '0', 'WINDOWID': '41961961', 'FONT_ENCODINGS_DIRECTORY': '/usr/share/fonts/X11/encodings', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SESSION_MANAGER': 'local/tarzan-desktop:@/tmp/.ICE-unix/133,unix/tarzan-desktop:/tmp/.ICE-unix/133', 'XDG_MENU_PREFIX': 'xfce-', 'VGL_COMPRESS': '0', 'DISPLAY': ':1.0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'XFCE', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/tmp/ssh-XXXXXX3Bjia3/agent.182', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/ros2_ws/build/peripherals', 'XDG_CONFIG_DIRS': '/etc/xdg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share', 'PYTHONPATH': '/ros2_ws/build/peripherals/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/peripherals/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.011204] (-) TimerEvent: {}
+[2.111691] (-) TimerEvent: {}
+[2.212163] (-) TimerEvent: {}
+[2.312946] (-) TimerEvent: {}
+[2.340936] (driver) StdoutLine: {'line': b'running develop\n'}
+[2.383932] (peripherals) StdoutLine: {'line': b'running develop\n'}
+[2.413036] (-) TimerEvent: {}
+[2.513507] (-) TimerEvent: {}
+[2.548368] (driver) StdoutLine: {'line': b'running egg_info\n'}
+[2.548787] (driver) StdoutLine: {'line': b'writing driver.egg-info/PKG-INFO\n'}
+[2.549340] (driver) StdoutLine: {'line': b'writing dependency_links to driver.egg-info/dependency_links.txt\n'}
+[2.556569] (driver) StdoutLine: {'line': b'writing entry points to driver.egg-info/entry_points.txt\n'}
+[2.556891] (driver) StdoutLine: {'line': b'writing requirements to driver.egg-info/requires.txt\n'}
+[2.558154] (driver) StdoutLine: {'line': b'writing top-level names to driver.egg-info/top_level.txt\n'}
+[2.562132] (driver) StdoutLine: {'line': b"reading manifest file 'driver.egg-info/SOURCES.txt'\n"}
+[2.563220] (driver) StdoutLine: {'line': b"writing manifest file 'driver.egg-info/SOURCES.txt'\n"}
+[2.565221] (driver) StdoutLine: {'line': b'running build_ext\n'}
+[2.565538] (driver) StdoutLine: {'line': b'Creating /ros2_ws/install/driver/lib/python3.10/site-packages/driver.egg-link (link to .)\n'}
+[2.566709] (driver) StdoutLine: {'line': b'Installing control_manager script to /ros2_ws/install/driver/lib/driver\n'}
+[2.566995] (driver) StdoutLine: {'line': b'Installing controller script to /ros2_ws/install/driver/lib/driver\n'}
+[2.567299] (driver) StdoutLine: {'line': b'\n'}
+[2.567378] (driver) StdoutLine: {'line': b'Installed /ros2_ws/build/driver\n'}
+[2.567469] (driver) StdoutLine: {'line': b'running symlink_data\n'}
+[2.599792] (peripherals) StdoutLine: {'line': b'running egg_info\n'}
+[2.600181] (peripherals) StdoutLine: {'line': b'writing peripherals.egg-info/PKG-INFO\n'}
+[2.600588] (peripherals) StdoutLine: {'line': b'writing dependency_links to peripherals.egg-info/dependency_links.txt\n'}
+[2.607207] (peripherals) StdoutLine: {'line': b'writing entry points to peripherals.egg-info/entry_points.txt\n'}
+[2.607659] (peripherals) StdoutLine: {'line': b'writing requirements to peripherals.egg-info/requires.txt\n'}
+[2.608380] (peripherals) StdoutLine: {'line': b'writing top-level names to peripherals.egg-info/top_level.txt\n'}
+[2.612787] (peripherals) StdoutLine: {'line': b"reading manifest file 'peripherals.egg-info/SOURCES.txt'\n"}
+[2.613575] (-) TimerEvent: {}
+[2.613969] (peripherals) StdoutLine: {'line': b"writing manifest file 'peripherals.egg-info/SOURCES.txt'\n"}
+[2.616829] (peripherals) StdoutLine: {'line': b'running build_ext\n'}
+[2.617218] (peripherals) StdoutLine: {'line': b'Creating /ros2_ws/install/peripherals/lib/python3.10/site-packages/peripherals.egg-link (link to .)\n'}
+[2.619026] (peripherals) StdoutLine: {'line': b'Installing teleop_joy script to /ros2_ws/install/peripherals/lib/peripherals\n'}
+[2.619567] (peripherals) StdoutLine: {'line': b'\n'}
+[2.619682] (peripherals) StdoutLine: {'line': b'Installed /ros2_ws/build/peripherals\n'}
+[2.619864] (peripherals) StdoutLine: {'line': b'running symlink_data\n'}
+[2.659313] (driver) CommandEnded: {'returncode': 0}
+[2.687691] (driver) JobEnded: {'identifier': 'driver', 'rc': 0}
+[2.713739] (-) TimerEvent: {}
+[2.733751] (peripherals) CommandEnded: {'returncode': 0}
+[2.771082] (peripherals) JobEnded: {'identifier': 'peripherals', 'rc': 0}
+[2.773697] (-) EventReactorShutdown: {}

@@ -2,6 +2,7 @@ package.xml
 setup.cfg
 setup.py
 peripherals/__init__.py
+peripherals/teleop_joy.py
 peripherals/teleop_keyboard.py
 peripherals.egg-info/PKG-INFO
 peripherals.egg-info/SOURCES.txt

@@ -9,10 +9,10 @@ class TeleopJoy(Node):
         super().__init__('teleop_joy')
 
         # declare parameters for maximum speed
-        self.declare_parameter('max_linear_speed', 0.2)
-        self.declare_parameter('max_angular_speed', 0.5)
-        self.max_linear_speed = self.get_parameter('max_linear_speed').value
-        self.max_angular_speed = self.get_parameter('max_angular_speed').value
+        self.declare_parameter('max_motor_speed', 0.2)
+        self.declare_parameter('max_servo_steering', 0.5)
+        self.max_motor_speed = self.get_parameter('max_motor_speed').value
+        self.max_servo_steering = self.get_parameter('max_servo_steering').value
 
         # create a subscriber for topic /joy
         self.joy_subscriber = self.create_subscription(Joy, '/joy', self.joy_callback, 10)
@@ -25,7 +25,7 @@ class TeleopJoy(Node):
         )
 
         # Publisher for buzzer
-        self.buzzer_pub = self.create_publisher(BuzzerState, '/set_buzzer', 10)
+        self.buzzer_publisher = self.create_publisher(BuzzerState, '/set_buzzer', 10)
 
         # Track whether the X button was pressed previously (to avoid spamming buzzer)
         self.last_x_pressed = False
@@ -41,7 +41,7 @@ class TeleopJoy(Node):
 
         # -- 2) Handle servo commands (right stick X) ------------------------
         # Typically right stick X is msg.axes[3]
-        servo_input = msg.axes[3]
+        servo_input = msg.axes[2]
         # Scale it
         servo_steer = servo_input * self.max_servo_steering
 
@@ -50,7 +50,7 @@ class TeleopJoy(Node):
         twist = Twist()
         twist.linear.x = motor_speed
         twist.angular.z = servo_steer
-        self.cmd_vel_pub.publish(twist)
+        self.cmd_vel_publisher.publish(twist)
 
         # -- 3) Handle buzzer when X button is pressed -----------------------
         # For an Xbox controller, “X” is often msg.buttons[2].
@@ -64,7 +64,7 @@ class TeleopJoy(Node):
             buzzer_msg.on_time = 0.2   # seconds
             buzzer_msg.off_time = 0.0  # seconds
             buzzer_msg.repeat = 1
-            self.buzzer_pub.publish(buzzer_msg)
+            self.buzzer_publisher.publish(buzzer_msg)
 
         # Update tracking
         self.last_x_pressed = x_button_pressed
