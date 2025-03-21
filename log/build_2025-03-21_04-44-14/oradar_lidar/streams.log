@@ -1,0 +1,1 @@
+[0.559s] Invoking command in '/ros2_ws/build/oradar_lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/install/peripherals:/ros2_ws/install/driver:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/oradar_lidar -- -j4 -l4
